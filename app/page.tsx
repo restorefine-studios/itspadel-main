@@ -1,10 +1,10 @@
 import Hero from "./components/Hero"
-// import DownloadPadel from './components/Home/DownloadPadel'
-// import FindYourClub from './components/Home/FindYourClub'
-// import FastestGrowing from './components/Home/FastestGrowing'
-// import Services from './components/Home/Services'
+import DownloadPadel from './components/Home/DownloadPadel'
+import FindYourClub from './components/Home/FindYourClub'
+import FastestGrowing from './components/Home/FastestGrowing'
+import Services from './components/Home/Services'
 import Reviews from './components/Reviews'
-// import Community from './components/Community'
+import Community from './components/Community'
 import FAQ from './components/FAQ'
 import { Metadata } from "next"
 
@@ -17,7 +17,7 @@ export default function Home () {
   return (
     <main>
       <Hero
-        image="/itspadel-homehero-bg.webp"
+        image="https://images.unsplash.com/photo-1622279457486-62dcc4a431d6?q=80&w=1740&auto=format&fit=crop"
         headline="Discover The Padel Lifestyle"
         paragraph="Where the rallies bring you in, but the people make you stay.Play, connect and feel part of something real"
         ctaText="Select Your Club"
@@ -25,12 +25,12 @@ export default function Home () {
         cta2Text="How to Book"
         cta2Link="https://app.playtomic.io/?utm_source=web-2025"
       />
-      {/* <DownloadPadel /> */}
-      {/* <FindYourClub />
+      <DownloadPadel />
+      <FindYourClub />
       <FastestGrowing />
-      <Services /> */}
+      <Services />
        <Reviews />
-       {/* <Community /> */}
+       <Community />
        <FAQ />
      </main>
   )
