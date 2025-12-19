@@ -15,14 +15,49 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata: Metadata = {
-  title: "It's Padel - Indoor Padel Court",
-  description: "It's Padel",
-   icons: {
-     icon: '/itspadel-logo-main.svg', 
-     shortcut: '/itspadel-logo-main.svg',
-     apple: '/itspadel-logo-main.svg',  // optional for iOS
-   },
-};
+  title: 'itspadel | Your game starts here',
+  description:
+    'itspadel is a modern padel club in East Kilbride offering premium padel courts, competitive play, and a vibrant padel community. Your game starts here.',
+    icons: {
+    icon: '/itspadel-logo-main.svg',
+  },
+  keywords: [
+    'padel East Kilbride',
+    'padel courts East Kilbride',
+    'padel club Scotland',
+    'play padel',
+    'padel community',
+    'competitive padel',
+    'itspadel'
+  ],
+  openGraph: {
+    title: 'itspadel | Your game starts here',
+    description:
+      'Experience padel at itspadel — premium courts, competitive growth, and a connected community in East Kilbride.',
+    url: 'https://itspadel.co.uk',
+    siteName: 'itspadel',
+    images: [
+      {
+        url: '/itspadel-logo-main.svg',
+        width: 1200,
+        height: 630,
+        alt: 'itspadel – Padel courts and community'
+      }
+    ],
+    locale: 'en_GB',
+    type: 'website'
+  },
+  twitter: {
+    card: 'summary_large_image',
+    title: 'itspadel | Your game starts here',
+    description:
+      'Premium padel experience, community, and competitive growth in East Kilbride.',
+    images: ['/itspadel-logo-main.svg']
+  },
+  alternates: {
+    canonical: 'https://itspadel.co.uk'
+  }
+}
 
 export default function RootLayout({
   children,

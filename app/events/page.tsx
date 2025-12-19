@@ -2,17 +2,15 @@ import Hero from '../components/Hero'
 import ContactForm from '../components/Events/ContactForm'
 import eventsData from '../../languages/padelevents.json'
 
-const Events = () => {
+export default function Events () {
   return (
-    <div>
+    <main>
       <Hero
         image={eventsData.hero.backgroundImage}
         headline={eventsData.hero.headline}
         paragraph={eventsData.hero.paragraph}
       />
       <ContactForm />
-    </div>
+    </main>
   )
 }
-
-export default Events

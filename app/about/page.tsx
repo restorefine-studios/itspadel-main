@@ -8,7 +8,7 @@ import Community from './../components/Community'
 
 export default function About() {
   return (
-    <div>
+    <main>
       <Hero
         image={aboutData.hero.backgroundImage}
         headline={aboutData.hero.headline}
@@ -21,6 +21,6 @@ export default function About() {
       <Team />
       <Reviews />
       <Community />
-    </div>
+    </main>
   )
 }
