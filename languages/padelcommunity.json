@@ -1,0 +1,33 @@
+{
+  "headline": "CONNECT WITH OUR ONLINE COMMUNITY",
+  "images": [
+    {
+      "image": "/itspadel-gameplay-gear.webp",
+      "alt": "Padel player in action"
+    },
+    {
+      "image": "/itspadel-social-lifestyle.webp",
+      "alt": "Padel court view"
+    },
+    {
+      "image": "/itspadel-gameplay-lifestyle.webp",
+      "alt": "Padel equipment"
+    },
+    {
+      "image": "/itspadel-lifestyle.webp",
+      "alt": "Padel match"
+    },
+    {
+      "image": "/itspadel-gameplay.webp",
+      "alt": "Padel players celebrating"
+    },
+   {
+      "image": "/itspadel-gameplay.webp",
+      "alt": "Padel players celebrating"
+    },
+    {
+      "image": "https://images.unsplash.com/photo-1551698618-1dfe5d97d256?q=80&w=1740&auto=format&fit=crop",
+      "alt": "Padel community"
+    }
+  ]
+}

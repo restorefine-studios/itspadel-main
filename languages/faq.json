@@ -1,0 +1,32 @@
+{
+  "headline": "FREQUENTLY ASKED QUESTIONS",
+  "subtext": "Still have questions? All our clubs are here to help",
+  "ctaText": "VIEW CLUBS",
+  "ctaLink": "/clubs",
+  "faqs": [
+    {
+      "question": "What is Padel?",
+      "answer": "Padel is a racquet sport that combines elements of tennis, squash, and badminton. It's played in an enclosed court with walls, making it fast-paced and exciting."
+    },
+    {
+      "question": "Do I need prior experience to play?",
+      "answer": "No prior experience is needed! Our coaches provide lessons for all levels, from beginners to advanced players. We welcome everyone to join the fun."
+    },
+    {
+      "question": "What equipment do I need?",
+      "answer": "We provide all equipment at our clubs, including racquets, balls, and shoes. If you'd like to purchase your own, we recommend starting with a basic set."
+    },
+    {
+      "question": "How long does a game last?",
+      "answer": "A standard game lasts about 20-30 minutes, and matches are typically best of 3 sets. It's perfect for a quick session or a longer play."
+    },
+    {
+      "question": "Are there coaching sessions available?",
+      "answer": "Yes! We offer private and group coaching at all our clubs. Our experienced coaches will help you improve your skills and enjoy the game more."
+    },
+    {
+      "question": "Can I book a court online?",
+      "answer": "Absolutely! Use our Playtomic app or website to book courts, check availability, and manage your reservations easily."
+    }
+  ]
+}
