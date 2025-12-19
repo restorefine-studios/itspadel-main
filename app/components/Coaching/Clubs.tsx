@@ -1,5 +1,4 @@
 import Link from 'next/link'
-import coachingData from '../../../languages/padelcoaching.json'
 
 const Clubs = () => {
   return (
@@ -11,20 +10,61 @@ const Clubs = () => {
         </div>
 
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
-          {coachingData.clubs.map((club: {name: string, link: string}, index: number) => (
-            <div
-              key={index}
-              className="bg-white rounded-2xl p-8 shadow-lg text-center"
+          <div
+            className="bg-white rounded-2xl p-8 shadow-lg text-center"
+          >
+            <h3 className="font-bison text-2xl mb-4">Alderley Park</h3>
+            <Link
+              href="/padel-coaching-alderley-park"
+              className="bg-[#009FF3] text-white px-6 py-3 font-inter font-medium hover:bg-[#0080cc] transition-colors uppercase"
             >
-              <h3 className="font-bison text-2xl mb-4">{club.name}</h3>
-              <Link
-                href={club.link}
-                className="bg-[#009FF3] text-white px-6 py-3 font-inter font-medium hover:bg-[#0080cc] transition-colors uppercase"
-              >
-                View Coaching
-              </Link>
-            </div>
-          ))}
+              View Coaching
+            </Link>
+          </div>
+          <div
+            className="bg-white rounded-2xl p-8 shadow-lg text-center"
+          >
+            <h3 className="font-bison text-2xl mb-4">Manchester</h3>
+            <Link
+              href="/padel-coaching-manchester"
+              className="bg-[#009FF3] text-white px-6 py-3 font-inter font-medium hover:bg-[#0080cc] transition-colors uppercase"
+            >
+              View Coaching
+            </Link>
+          </div>
+          <div
+            className="bg-white rounded-2xl p-8 shadow-lg text-center"
+          >
+            <h3 className="font-bison text-2xl mb-4">Darlington</h3>
+            <Link
+              href="/padel-coaching-darlington"
+              className="bg-[#009FF3] text-white px-6 py-3 font-inter font-medium hover:bg-[#0080cc] transition-colors uppercase"
+            >
+              View Coaching
+            </Link>
+          </div>
+          <div
+            className="bg-white rounded-2xl p-8 shadow-lg text-center"
+          >
+            <h3 className="font-bison text-2xl mb-4">Stockport</h3>
+            <Link
+              href="/padel-coaching-stockport"
+              className="bg-[#009FF3] text-white px-6 py-3 font-inter font-medium hover:bg-[#0080cc] transition-colors uppercase"
+            >
+              View Coaching
+            </Link>
+          </div>
+          <div
+            className="bg-white rounded-2xl p-8 shadow-lg text-center"
+          >
+            <h3 className="font-bison text-2xl mb-4">Nottingham</h3>
+            <Link
+              href="/padel-coaching-nottingham"
+              className="bg-[#009FF3] text-white px-6 py-3 font-inter font-medium hover:bg-[#0080cc] transition-colors uppercase"
+            >
+              View Coaching
+            </Link>
+          </div>
         </div>
       </div>
     </section>

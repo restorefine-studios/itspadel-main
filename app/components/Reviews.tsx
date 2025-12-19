@@ -2,9 +2,31 @@
 
 import { useState } from 'react'
 import { ChevronLeftIcon, ChevronRightIcon, StarIcon } from '@heroicons/react/24/solid'
-import reviewsData from '../../languages/padelreviews.json'
 
 const Reviews = () => {
+  const reviewsData = [
+    {
+      "heading": "It's Padel is the ultimate padel destination!",
+      "message": "The atmosphere is fantastic, and it's the perfect place to meet fellow padel enthusiasts.",
+      "name": "Neil. W"
+    },
+    {
+      "heading": "I've found my new favourite hobby thanks to It's Padel!",
+      "message": "The club is welcoming, organised, and a great place to play regularly with friends.",
+      "name": "Lynsey. S"
+    },
+    {
+      "heading": "It's Padel's facilities are top-notch!",
+      "message": "From the clean, modern locker rooms to the spacious courts, everything is designed for a fantastic padel experience.",
+      "name": "Josh. E"
+    },
+    {
+      "heading": "The private coaching at It's Padel has really sharpened my game.",
+      "message": "The coaches are patient, knowledgeable, and give you personalised guidance every session.",
+      "name": "Jess. P"
+    }
+  ]
+
   const [currentIndex, setCurrentIndex] = useState(0)
 
   const nextReview = () => {

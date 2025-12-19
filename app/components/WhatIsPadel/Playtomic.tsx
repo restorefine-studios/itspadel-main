@@ -1,5 +1,4 @@
 import Link from 'next/link'
-import whatIsPadelData from '../../../languages/padelwhatispadel.json'
 import Image from 'next/image'
 
 const Playtomic = () => {
@@ -9,30 +8,30 @@ const Playtomic = () => {
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
           <div>
             <h2 className="font-bison text-4xl md:text-5xl mb-6">
-              {whatIsPadelData.playtomic.headline}
+              Book your court by downloading the Playtomic app
             </h2>
             <p className="font-inter text-base text-gray-700 mb-8">
-              {whatIsPadelData.playtomic.paragraph}
+              Start playing today by downloading Playtomic.
             </p>
             <Link
-              href={whatIsPadelData.playtomic.ctaLink}
+              href="https://app.playtomic.io/?utm_source=web-2025"
               target="_blank"
               rel="noopener noreferrer"
               className="bg-[#009FF3] text-white px-6 py-3 font-inter font-medium hover:bg-[#0080cc] transition-colors uppercase"
             >
-              {whatIsPadelData.playtomic.ctaText}
+              Download Playtomic
             </Link>
           </div>
           <div className="relative">
             <Image
-              src={whatIsPadelData.playtomic.image}
+              src="/playtomic-cover-image.webp"
               alt="Playtomic app"
               width={400}
               height={500}
               className="w-full h-96 object-cover rounded-2xl"
             />
             <Image
-              src={whatIsPadelData.playtomic.playtomicImage}
+              src="/playtomic-logo.svg"
               alt="Playtomic logo"
               width={400}
               height={500}

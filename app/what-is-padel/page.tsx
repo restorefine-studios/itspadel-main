@@ -3,15 +3,14 @@ import HowToPlay from '../components/WhatIsPadel/HowToPlay'
 import PadelVsTennis from '../components/WhatIsPadel/PadelVsTennis'
 import PrivateCoaching from '../components/WhatIsPadel/PrivateCoaching'
 import Playtomic from '../components/WhatIsPadel/Playtomic'
-import whatIsPadelData from '../../languages/padelwhatispadel.json'
 
 export default function WhatIsPadel () {
   return (
     <main>
       <Hero
-        image={whatIsPadelData.hero.backgroundImage}
-        headline={whatIsPadelData.hero.headline}
-        paragraph={whatIsPadelData.hero.paragraph}
+        image="/itspadel-how-to-padel.webp"
+        headline="New To Padel?"
+        paragraph="Padel is a fast-paced and addictive racket sport that combines the best elements of tennis and squash."
       />
       <HowToPlay />
       <PadelVsTennis />

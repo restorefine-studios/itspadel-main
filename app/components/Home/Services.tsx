@@ -1,12 +1,40 @@
 "use client"
 
 import { ChevronRightIcon } from '@heroicons/react/24/outline'
-import homeData from '../../../languages/padelhome.json'
 import Image from 'next/image'
 import Link from 'next/link'
 
 const Services = () => {
-  const services = homeData.services
+  const services = [
+    {
+      "headline": "Events",
+      "paragraph": "Invite your colleagues and clients to experience the fastest growing sport in a unique and private setting.",
+      "ctaText": "Enquire Now",
+      "ctaLink": "/events",
+      "image": "/itspadel-event-gamenight.webp"
+    },
+    {
+      "headline": "Coaching",
+      "paragraph": "Our expert coaches offer personalised training at all our clubs to help elevate your padel game to the next level!",
+      "ctaText": "Enquire Now",
+      "ctaLink": "/coaching",
+      "image": "/itspadel-model-shoot.webp"
+    },
+    {
+      "headline": "Join The Club",
+      "paragraph": "We operate social clubs where you can meet like-minded players, all with a common interest in this exhilarating sport.",
+      "ctaText": "Enquire Now",
+      "ctaLink": "/clubs",
+      "image": "/itspadel-footwear.webp"
+    },
+    {
+      "headline": "Lifestyle",
+      "paragraph": "Invite your colleagues and clients to experience the fastest growing sport in a unique and private setting.",
+      "ctaText": "Enquire Now",
+      "ctaLink": "/about",
+      "image": "/itspadel-drone-shoot.webp"
+    }
+  ]
 
   return (
     <section className="py-20 px-8 md:px-16 lg:px-32">

@@ -1,8 +1,104 @@
 import Link from 'next/link'
-import clubsData from '../../../languages/padelclubs.json'
 
 const Regions = () => {
-  const regions = Object.values(clubsData.regions)
+  const regions = [
+    {
+      "name": "North West",
+      "clubs": [
+        {
+          "name": "Alderley Park",
+          "courts": "3 outdoor courts",
+          "link": "/pure-padel-alderley-park"
+        },
+        {
+          "name": "Manchester",
+          "courts": "6 indoor courts",
+          "link": "/pure-padel-manchester"
+        },
+        {
+          "name": "Stockport",
+          "courts": "5 indoor courts",
+          "link": "/padel-stockport"
+        }
+      ]
+    },
+    {
+      "name": "Midlands",
+      "clubs": [
+        {
+          "name": "Nottingham",
+          "courts": "7 indoor courts",
+          "link": "/padel-nottingham"
+        },
+        {
+          "name": "Solihull",
+          "courts": "4 covered courts",
+          "status": "Coming soon",
+          "link": "/padel-solihull"
+        },
+        {
+          "name": "Birmingham",
+          "courts": "7 indoor courts",
+          "status": "Coming soon",
+          "link": "/padel-birmingham"
+        }
+      ]
+    },
+    {
+      "name": "Yorkshire",
+      "clubs": [
+        {
+          "name": "North Leeds",
+          "courts": "4 outdoor courts",
+          "link": "/padel-north-leeds"
+        },
+        {
+          "name": "York",
+          "courts": "5 covered courts",
+          "status": "Coming soon",
+          "link": "/padel-york"
+        }
+      ]
+    },
+    {
+      "name": "North East",
+      "clubs": [
+        {
+          "name": "Darlington",
+          "courts": "7 indoor courts",
+          "link": "/padel-darlington"
+        },
+        {
+          "name": "Gosforth",
+          "courts": "10 indoor courts",
+          "status": "Coming soon",
+          "link": "/padel-gosforth"
+        }
+      ]
+    },
+    {
+      "name": "South West",
+      "clubs": [
+        {
+          "name": "Lightwater",
+          "courts": "6 covered courts",
+          "status": "Coming soon",
+          "link": "/padel-lightwater"
+        }
+      ]
+    },
+    {
+      "name": "Scotland",
+      "clubs": [
+        {
+          "name": "Glasgow",
+          "courts": "11 indoor courts",
+          "status": "Coming soon",
+          "link": "/padel-glasgow"
+        }
+      ]
+    }
+  ]
 
   return (
     <section className="py-20 px-8 md:px-16 lg:px-32">

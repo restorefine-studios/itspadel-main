@@ -1,12 +1,11 @@
 import Hero from "./components/Hero"
-import DownloadPadel from './components/Home/DownloadPadel'
-import FindYourClub from './components/Home/FindYourClub'
-import FastestGrowing from './components/Home/FastestGrowing'
-import Services from './components/Home/Services'
+// import DownloadPadel from './components/Home/DownloadPadel'
+// import FindYourClub from './components/Home/FindYourClub'
+// import FastestGrowing from './components/Home/FastestGrowing'
+// import Services from './components/Home/Services'
 import Reviews from './components/Reviews'
-import Community from './components/Community'
+// import Community from './components/Community'
 import FAQ from './components/FAQ'
-import homeData from '../languages/padelhome.json'
 import { Metadata } from "next"
 
 export const metadata: Metadata = {
@@ -18,20 +17,20 @@ export default function Home () {
   return (
     <main>
       <Hero
-        image={homeData.hero.backgroundImage}
-        headline={homeData.hero.headline}
-        paragraph={homeData.hero.paragraph}
-        ctaText={homeData.hero.ctaText}
-        ctaLink={homeData.hero.ctaLink}
-        cta2Text={homeData.hero.cta2Text}
-        cta2Link={homeData.hero.cta2Link}
+        image="/itspadel-homehero-bg.webp"
+        headline="Discover The Padel Lifestyle"
+        paragraph="Where the rallies bring you in, but the people make you stay.Play, connect and feel part of something real"
+        ctaText="Select Your Club"
+        ctaLink="/clubs"
+        cta2Text="How to Book"
+        cta2Link="https://app.playtomic.io/?utm_source=web-2025"
       />
-      <DownloadPadel />
-      <FindYourClub />
+      {/* <DownloadPadel /> */}
+      {/* <FindYourClub />
       <FastestGrowing />
-      <Services />
+      <Services /> */}
        <Reviews />
-       <Community />
+       {/* <Community /> */}
        <FAQ />
      </main>
   )

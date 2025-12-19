@@ -1,4 +1,3 @@
-import aboutData from '../../../languages/padelabout.json'
 import Image from 'next/image'
 import Link from 'next/link'
 
@@ -9,7 +8,7 @@ const Mission = () => {
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
           <div>
             <Image
-              src={aboutData.mission.image}
+              src="/itspadel-gameplay-court.webp"
               alt="Padel mission"
               width={400}
               height={450}
@@ -18,16 +17,16 @@ const Mission = () => {
           </div>
           <div>
             <h2 className="font-bison text-4xl md:text-5xl mb-2">
-              {aboutData.mission.headline}
+              The It&apos;s Padel Mission
             </h2>
             <p className="font-inter text-base text-black/50 mb-8">
-              {aboutData.mission.paragraph}
+              Pure Padel is on a journey to help make padel the next generation of racquet sports in the UK. With the aim of building 30 clubs across the UK within 5 years, we are dedicated to providing exceptional facilities, top-notch coaching, and a welcoming atmosphere for players of all levels. Join the hype and experience the passion and excitement of padel like never before.
             </p>
             <Link
-              href={aboutData.mission.ctaLink}
+              href="/what-is-padel"
               className="bg-[#009FF3] text-white px-6 py-3 font-inter font-medium hover:bg-[#0080cc] transition-colors uppercase"
             >
-              {aboutData.mission.ctaText}
+              How To Play
             </Link>
           </div>
         </div>
