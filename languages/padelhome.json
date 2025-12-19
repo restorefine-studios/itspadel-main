@@ -5,42 +5,11 @@
     "ctaText": "Select Your Club",
     "ctaLink": "/clubs",
     "cta2Text": "How to Book",
-    "cta2Link": "/how-to-book",
+    "cta2Link": "https://app.playtomic.io/?utm_source=web-2025",
     "backgroundImage": "/itspadel-homehero-bg.webp"
   },
-  "downloadPadel": {
-    "headline": "Book your court by downloading the Playtomic app",
-    "paragraph": "Start playing today by downloading Playtomic.",
-    "ctaText": "Download Playtomic",
-    "ctaLink": "https://app.playtomic.io/?utm_source=web-2025",
-    "image": "https://www.purepadelclubs.co.uk/wp-content/uploads/2024/09/Download-Playtonic-app.jpg",
-    "playtomicImage": "https://www.purepadelclubs.co.uk/wp-content/uploads/2024/04/Playtomic.png"
-  },
-  "findYourClub": {
-    "headline": "Find your club",
-    "clubs": [
-      {
-        "name": "Alderley Park",
-        "image": "/locations/itspadel-mock-location-nottingham.webp"
-      },
-      {
-        "name": "Manchester",
-        "image": "https://images.unsplash.com/photo-1554068865-24cecd4e34b8?q=80&w=1740&auto=format&fit=crop"
-      },
-      {
-        "name": "Stockport",
-        "image": "https://images.unsplash.com/photo-1617883861744-1197c9a3b90b?q=80&w=1740&auto=format&fit=crop"
-      },
-      {
-        "name": "North Leeds",
-        "image": "https://images.unsplash.com/photo-1626224583764-f87db24ac4ea?q=80&w=1740&auto=format&fit=crop"
-      },
-      {
-        "name": "Darlington",
-        "image": "https://images.unsplash.com/photo-1554068865-24cecd4e34b8?q=80&w=1740&auto=format&fit=crop"
-      }
-    ]
-  },
+  
+  
   "fastestGrowing": {
     "headline": "The fastest growing sport in the world",
     "paragraph": "Padel is a fast-paced and addictive racket sport that combines the best elements of tennis and squash. With a smaller court and walls, it's extremely easy to pick up! With two clubs built already in the North West and more on the way, Pure Padel will make sure you have bringing the world's fastest growing sport to your doorstep!",
@@ -79,79 +48,7 @@
       "ctaLink": "/about",
       "image": "/itspadel-drone-shoot.webp"
     }
-  ],
-  "teamSection": {
-    "headline": "Meet Our Team",
-    "team": [
-      {
-        "name": "Sammy Arora",
-        "role": "Co-Founder & Managing Director",
-        "image": "https://www.purepadelclubs.co.uk/wp-content/uploads/2024/09/TeamSammyB.jpg"
-      },
-      {
-        "name": "Lewis Kirk",
-        "role": "Head of Commercial",
-        "image": "https://www.purepadelclubs.co.uk/wp-content/uploads/2024/09/TeamLewisB.jpg"
-      },
-      {
-        "name": "Jose Munoz",
-        "role": "Regional Manager",
-        "image": "https://www.purepadelclubs.co.uk/wp-content/uploads/2024/09/TeamJoseB.jpg"
-      },
-      {
-        "name": "Andrew Scullion",
-        "role": "Club Manager of Pure Padel Darlington",
-        "image": "https://www.purepadelclubs.co.uk/wp-content/uploads/2025/08/Meet-the-team-initial-design-concepts-1.png"
-      },
-      {
-        "name": "Arielle Chaytow",
-        "role": "Club Manager of Pure Padel Manchester",
-        "image": "https://www.purepadelclubs.co.uk/wp-content/uploads/2025/08/Meet-the-team-initial-design-concepts-3.jpg"
-      }
-    ]
-  },
-  "testimonial": {
-    "quote": "Pure Padel is the ultimate padel destination! The atmosphere is fantastic, and it's the perfect place to meet fellow padel enthusiasts.",
-    "author": "Neil. W"
-  },
-  "community": {
-    "headline": "Connect with our online community",
-    "subheadline": "Follow us on social media"
-  },
-  "faq": {
-    "headline": "Frequently Asked Questions",
-    "subheadline": "Still have questions? All our clubs are here to help",
-    "ctaText": "View Clubs",
-    "ctaLink": "/clubs",
-    "questions": [
-      {
-        "question": "How do I book a court?",
-        "answer": "All court bookings are made through the Playtomic app. Download the app and find Pure Padel to schedule your court time."
-      },
-      {
-        "question": "What is the cancellation policy?",
-        "answer": "You can cancel your booking more than 24 hrs before your game for a full refund."
-      },
-      {
-        "question": "Can I rent equipment?",
-        "answer": "Yes, we have rental rackets available in the shop."
-      },
-      {
-        "question": "Do you provide balls?",
-        "answer": "Balls can only be purchased from the club, not rented. If you book a course or a private lesson however, we will provide you with balls."
-      },
-      {
-        "question": "What do I do if I have never played padel before and want to get involved?",
-        "answer": "First, we recommend booking onto an Intro to Padel session which we run weekly. Then, you should join our beginners' socials where you can play with other beginners and practise playing in non-competitive match situations! You will find all available courses on the 'Academy' section on Playtomic."
-      },
-      {
-        "question": "How do I book a private coaching?",
-        "answer": "Please click here and fill out the form and one of our coaches will get in touch with you."
-      },
-      {
-        "question": "Can I book a private event / corporate day?",
-        "answer": "Yes, absolutely! Please click here and fill out the form and we will get in touch to plan your event with you."
-      }
-    ]
-  }
+  ]
+ 
+  
 }
