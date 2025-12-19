@@ -1,6 +1,9 @@
+"use client"
+
 import { motion } from 'framer-motion'
-import { Link } from 'react-router-dom'
 import whatIsPadelData from '../../../languages/padelwhatispadel.json'
+import Image from 'next/image'
+import Link from 'next/link'
 
 const PadelVsTennis = () => {
   return (
@@ -13,9 +16,11 @@ const PadelVsTennis = () => {
             transition={{ duration: 0.8 }}
             viewport={{ once: true }}
           >
-            <img
+            <Image
               src="/itspadel-padel-vs-tennis.webp"
               alt="Padel vs Tennis"
+              width={400}
+              height={500}
               className="w-full h-96 object-cover rounded-2xl"
             />
           </motion.div>
@@ -32,7 +37,7 @@ const PadelVsTennis = () => {
               {whatIsPadelData.padelVsTennis.paragraph}
             </p>
             <Link
-              to={whatIsPadelData.padelVsTennis.ctaLink}
+              href={whatIsPadelData.padelVsTennis.ctaLink}
               className="bg-[#009FF3] text-white px-6 py-3 font-inter font-medium hover:bg-[#0080cc] transition-colors uppercase"
             >
               {whatIsPadelData.padelVsTennis.ctaText}

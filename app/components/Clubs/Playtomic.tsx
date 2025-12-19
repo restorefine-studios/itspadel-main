@@ -1,6 +1,7 @@
 import { motion } from 'framer-motion'
 import { Link } from 'react-router-dom'
 import clubsData from '../../../languages/padelclubs.json'
+import Image from 'next/image'
 
 const Playtomic = () => {
   return (
@@ -35,14 +36,18 @@ const Playtomic = () => {
             viewport={{ once: true }}
             className="relative"
           >
-            <img
+            <Image
               src={clubsData.playtomic.image}
               alt="Playtomic app"
+              width={400}
+              height={500}
               className="w-full h-96 object-cover rounded-2xl"
             />
-            <img
+            <Image
               src={clubsData.playtomic.playtomicImage}
               alt="Playtomic logo"
+                width={400}
+              height={500}
               className="absolute bottom-4 right-4 w-16 h-16 bg-white rounded-full p-2"
             />
           </motion.div>

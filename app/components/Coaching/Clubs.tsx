@@ -1,5 +1,7 @@
+"use client"
+
 import { motion } from 'framer-motion'
-import { Link } from 'react-router-dom'
+import Link from 'next/link'
 import coachingData from '../../../languages/padelcoaching.json'
 
 const Clubs = () => {
@@ -52,7 +54,7 @@ const Clubs = () => {
             >
               <h3 className="font-bison text-2xl mb-4">{club.name}</h3>
               <Link
-                to={club.link}
+                href={club.link}
                 className="bg-[#009FF3] text-white px-6 py-3 font-inter font-medium hover:bg-[#0080cc] transition-colors uppercase"
               >
                 View Coaching

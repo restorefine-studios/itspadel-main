@@ -1,3 +1,5 @@
+"use client"
+
 import { useForm } from 'react-hook-form'
 
 interface FormData {
@@ -27,10 +29,10 @@ const ContactForm = () => {
           <div>
             <h2 className="font-bison text-4xl md:text-5xl mb-6">
               START YOUR NEXT EVENT<br />
-              WITH IT'S PADEL TODAY!
+              WITH IT&apos;S PADEL TODAY!
             </h2>
             <p className="font-inter text-base text-gray-700">
-              We love events! Whether it's Christmas, birthdays, corporate, private, or going big with a full venue hire, we create bespoke experiences that are different.
+              We love events! Whether it&apos;s Christmas, birthdays, corporate, private, or going big with a full venue hire, we create bespoke experiences that are different.
             </p>
           </div>
 

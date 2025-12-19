@@ -1,6 +1,8 @@
+"use client"
+
 import { motion } from 'framer-motion'
-import { Link } from 'react-router-dom'
 import whatIsPadelData from '../../../languages/padelwhatispadel.json'
+import Link from 'next/link'
 
 const PrivateCoaching = () => {
   return (
@@ -19,7 +21,7 @@ const PrivateCoaching = () => {
             {whatIsPadelData.privateCoaching.paragraph}
           </p>
           <Link
-            to={whatIsPadelData.privateCoaching.ctaLink}
+            href={whatIsPadelData.privateCoaching.ctaLink}
             className="bg-[#009FF3] text-white px-6 py-3 font-inter font-medium hover:bg-[#0080cc] transition-colors uppercase"
           >
             {whatIsPadelData.privateCoaching.ctaText}

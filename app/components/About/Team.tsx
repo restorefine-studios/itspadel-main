@@ -1,5 +1,8 @@
+"use client"
+
 import { motion } from 'framer-motion'
 import aboutData from '../../../languages/padelabout.json'
+import Image from 'next/image'
 
 const Team = () => {
   const containerVariants = {
@@ -48,9 +51,11 @@ const Team = () => {
               className="rounded-3xl overflow-hidden h-[500px] relative w-full"
               variants={itemVariants}
             >
-              <img
+              <Image
                 src={member.image}
                 alt={member.name}
+                width={400}
+                height={500}
                 className="w-full h-full object-cover aspect-auto grayscale"
               />
               <div className="w-full absolute bottom-0 left-0 z-10 p-6 h-44 bg-gradient-to-t from-[#009FF3] to-transparent">

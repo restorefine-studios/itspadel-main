@@ -37,10 +37,10 @@ li {
 
 body {
   margin: 0;
-  display: flex;
-  place-items: center;
   min-width: 320px;
   min-height: 100vh;
+  display: flex;
+  flex-direction: column;
 }
 
 h1 {
@@ -189,7 +189,11 @@ button:focus-visible {
     @apply bg-background text-foreground;
   }
   .font-bison {
+    font-family: 'Bison';
     font-weight: 700;
+  }
+  .font-headline {
+    font-family: 'Bison';
   }
   p {
     @apply tracking-tighter;
@@ -238,6 +242,118 @@ button:focus-visible {
 
 .read-the-docs {
   color: #888;
+}
+
+/* Hide Next.js dev mode logo */
+#nextjs-portal {
+  display: none !important;
+}
+
+/* Community section animations */
+@keyframes popIn {
+  0% {
+    opacity: 0;
+    transform: translate(0, 0) rotate(0deg) scale(0.5);
+  }
+  100% {
+    opacity: 1;
+    transform: translate(0, 0) rotate(0deg) scale(1.2);
+  }
+}
+
+@keyframes spreadOut1 {
+  0% {
+    transform: translate(0, 0) rotate(0deg) scale(1.2);
+  }
+  100% {
+    transform: translate(-20rem, 7.3rem) rotate(-28deg) scale(0.7756);
+  }
+}
+
+@keyframes spreadOut2 {
+  0% {
+    transform: translate(0, 0) rotate(0deg) scale(1.2);
+  }
+  100% {
+    transform: translate(-11rem, 4rem) rotate(-14deg) scale(0.8498);
+  }
+}
+
+@keyframes spreadOut3 {
+  0% {
+    transform: translate(0, 0) rotate(0deg) scale(1.2);
+  }
+  100% {
+    transform: translate(0rem, 0rem) rotate(0deg) scale(0.98);
+  }
+}
+
+@keyframes spreadOut4 {
+  0% {
+    transform: translate(0, 0) rotate(0deg) scale(1.2);
+  }
+  100% {
+    transform: translate(20rem, 7.3rem) rotate(28deg) scale(0.7756);
+  }
+}
+
+@keyframes spreadOut5 {
+  0% {
+    transform: translate(0, 0) rotate(0deg) scale(1.2);
+  }
+  100% {
+    transform: translate(11rem, 4rem) rotate(14deg) scale(0.8498);
+  }
+}
+
+.community-image-1 {
+  opacity: 0;
+  transform: translate(0, 0) rotate(0deg) scale(0.5);
+  z-index: 1;
+}
+
+.community-image-1.animate {
+  animation: popIn 0.5s ease-out, spreadOut1 1s ease-out 0.5s both;
+}
+
+.community-image-2 {
+  opacity: 0;
+  transform: translate(0, 0) rotate(0deg) scale(0.5);
+  z-index: 2;
+}
+
+.community-image-2.animate {
+  animation: popIn 0.5s ease-out, spreadOut2 1s ease-out 0.6s both;
+}
+
+.community-image-3 {
+  opacity: 0;
+  transform: translate(0, 0) rotate(0deg) scale(0.5);
+  z-index: 20;
+}
+
+.community-image-3.animate {
+  animation: popIn 0.5s ease-out, spreadOut3 1s ease-out 0.7s both;
+}
+
+.community-image-4 {
+  opacity: 0;
+  transform: translate(0, 0) rotate(0deg) scale(0.5);
+  z-index: 1;
+}
+
+.community-image-4.animate {
+  animation: popIn 0.5s ease-out, spreadOut4 1s ease-out 0.8s both;
+}
+
+.community-image-5 {
+  opacity: 0;
+  transform: translate(0, 0) rotate(0deg) scale(0.5);
+  z-index: 2;
+}
+
+.community-image-5.animate {
+  animation: popIn 0.5s ease-out, spreadOut5 1s ease-out 0.9s both;
 }
 
 

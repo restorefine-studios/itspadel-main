@@ -1,3 +1,4 @@
+import Image from 'next/image'
 import communityData from '../../languages/padelcommunity.json'
 import { Hash, Instagram, Youtube, Twitch } from 'lucide-react'
 
@@ -24,9 +25,11 @@ export default function Community() {
               zIndex: 1,
             }}
           >
-            <img
+            <Image
               src={communityData.images[0].image}
               alt={communityData.images[0].alt}
+              width={300}
+              height={500}
               className="w-full h-full object-cover"
             />
           </div>
@@ -37,9 +40,11 @@ export default function Community() {
               zIndex: 2,
             }}
           >
-            <img
+            <Image
               src={communityData.images[1].image}
               alt={communityData.images[1].alt}
+              width={300}
+              height={500}
               className="w-full h-full object-cover"
             />
           </div>
@@ -50,9 +55,11 @@ export default function Community() {
               zIndex: 20,
             }}
           >
-            <img
+            <Image
               src={communityData.images[2].image}
               alt={communityData.images[2].alt}
+              width={300}
+              height={500}
               className="w-full h-full object-cover"
             />
           </div>
@@ -63,9 +70,11 @@ export default function Community() {
               zIndex: 1,
             }}
           >
-            <img
+            <Image
               src={communityData.images[3].image}
               alt={communityData.images[3].alt}
+              width={300}
+              height={500}
               className="w-full h-full object-cover"
             />
           </div>
@@ -76,9 +85,11 @@ export default function Community() {
               zIndex: 2,
             }}
           >
-            <img
+            <Image
               src={communityData.images[5].image}
               alt={communityData.images[5].alt}
+              width={300}
+              height={500}
               className="w-full h-full object-cover"
             />
           </div>

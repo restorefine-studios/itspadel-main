@@ -1,6 +1,9 @@
+"use client"
+
 import { motion } from 'framer-motion'
-import { Link } from 'react-router-dom'
 import aboutData from '../../../languages/padelabout.json'
+import Image from 'next/image'
+import Link from 'next/link'
 
 const Mission = () => {
   return (
@@ -13,9 +16,11 @@ const Mission = () => {
             transition={{ duration: 0.8 }}
             viewport={{ once: true }}
           >
-            <img
+            <Image
               src={aboutData.mission.image}
               alt="Padel mission"
+              width={400}
+              height={450}
               className="w-full h-96 object-cover rounded-2xl"
             />
           </motion.div>
@@ -32,7 +37,7 @@ const Mission = () => {
               {aboutData.mission.paragraph}
             </p>
             <Link
-              to={aboutData.mission.ctaLink}
+              href={aboutData.mission.ctaLink}
               className="bg-[#009FF3] text-white px-6 py-3 font-inter font-medium hover:bg-[#0080cc] transition-colors uppercase"
             >
               {aboutData.mission.ctaText}

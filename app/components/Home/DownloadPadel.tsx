@@ -45,7 +45,7 @@ const DownloadPadel = () => {
           className="flex-1 text-left h-full flex flex-col justify-between items-start"
           variants={itemVariants}
         >
-          <Image src="/playtomic-logo.svg" alt="Playtomic Logo" width={40} height={40} className="h-8 mb-4 mx-0" />
+          <Image src="/playtomic-logo.svg" alt="Playtomic Logo" width={200} height={200} className="h-12 mb-4 mx-0" />
           <h2 className="font-bison font-bold text-5xl md:text-6xl mb-4 tracking-tighter">
             BOOK YOUR COURT BY<br />
             DOWNLOADING<br />

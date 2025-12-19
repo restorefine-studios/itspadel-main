@@ -1,3 +1,5 @@
+"use client"
+
 import { motion } from 'framer-motion'
 import aboutData from '../../../languages/padelabout.json'
 
@@ -54,7 +56,7 @@ const Testimonials = () => {
                 ))}
               </div>
               <p className="font-inter text-base text-gray-700 mb-4 italic">
-                "{testimonial.quote}"
+                {testimonial.quote}
               </p>
               <p className="font-bison text-base text-[#009FF3]">- {testimonial.author}</p>
             </motion.div>

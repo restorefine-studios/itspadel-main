@@ -1,6 +1,9 @@
- import { useState } from 'react'
- import { Link } from 'react-router-dom'
- import { Bars3Icon, XMarkIcon } from '@heroicons/react/24/outline'
+"use client"
+
+import { useState } from 'react'
+import Link from 'next/link'
+import { Bars3Icon, XMarkIcon } from '@heroicons/react/24/outline'
+import Image from 'next/image'
 
 const Navbar = () => {
   const [isOpen, setIsOpen] = useState(false)
@@ -19,14 +22,14 @@ const Navbar = () => {
     <nav className="fixed top-0 w-full z-50 backdrop-blur-md bg-white/10">
       <div className="container mx-auto px-8 md:px-4 py-6 flex justify-between items-center">
         {/* Logo */}
-        <Link to="/">
-          <img src="/itspadel-logo-main.svg" alt="Itspadel Logo" className="h-10" />
+        <Link href="/">
+          <Image src="/itspadel-logo-main.svg" alt="Itspadel Logo" width={50} height={50} className="h-10" />
         </Link>
 
         {/* Desktop Menu */}
         <div className="hidden md:flex items-center space-x-8">
           {navItems.map((item) => (
-            <Link key={item.path} to={item.path} className={` ${ item.name === "Clubs" ? "bg-[#009FF3] px-3 py-1 text-white" : "text-white mix-blend-difference" } font-inter tracking-tight hover:text-blue-600 transition-all duration-300 ease-linear cursor-pointer`}>
+            <Link key={item.path} href={item.path} className={` ${ item.name === "Clubs" ? "bg-[#009FF3] px-3 py-1 text-white" : "text-white mix-blend-difference" } font-inter tracking-tight hover:text-blue-600 transition-all duration-300 ease-linear cursor-pointer`}>
               {item.name}
             </Link>
           ))}
@@ -43,7 +46,7 @@ const Navbar = () => {
         <div className="md:hidden bg-white/10 backdrop-blur-sm">
           <div className="px-8 py-4">
             {navItems.map((item) => (
-               <Link key={item.path} to={item.path} className="font-inter tracking-tight hover:text-blue-600 mix-blend-difference" onClick={toggleMenu}>
+               <Link key={item.path} href={item.path} className="font-inter tracking-tight hover:text-blue-600 mix-blend-difference" onClick={toggleMenu}>
                 <span className='flex flex-col items-start gap-y-8 text-white' >{item.name}</span>
                </Link>
             ))}
