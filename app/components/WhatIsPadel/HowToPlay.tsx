@@ -1,7 +1,10 @@
+"use client"
+
 import { motion } from 'framer-motion'
 import { useState } from 'react'
 import { PlusIcon } from '@heroicons/react/24/outline'
 import whatIsPadelData from '../../../languages/padelwhatispadel.json'
+import Image from 'next/image';
 
 interface GearContent {
   racket: { headline: string; paragraph: string };
@@ -82,9 +85,11 @@ const HowToPlay = () => {
           transition={{ duration: 0.8 }}
           viewport={{ once: true }}
         >
-          <img
+          <Image
             src={whatIsPadelData.howToPlay.tabs[activeTab].image}
             alt={whatIsPadelData.howToPlay.tabs[activeTab].title}
+            width={400}
+            height={500}
             className="w-full h-[450px] object-cover rounded-3xl"
           />
           <div>

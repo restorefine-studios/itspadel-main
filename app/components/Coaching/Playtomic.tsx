@@ -1,6 +1,9 @@
+"use client"
+
 import { motion } from 'framer-motion'
-import { Link } from 'react-router-dom'
+import Link from 'next/link'
 import coachingData from '../../../languages/padelcoaching.json'
+import Image from 'next/image'
 
 const Playtomic = () => {
   return (
@@ -20,7 +23,7 @@ const Playtomic = () => {
               {coachingData.playtomic.paragraph}
             </p>
             <Link
-              to={coachingData.playtomic.ctaLink}
+              href={coachingData.playtomic.ctaLink}
               target="_blank"
               rel="noopener noreferrer"
               className="bg-[#009FF3] text-white px-6 py-3 font-inter font-medium hover:bg-[#0080cc] transition-colors uppercase"
@@ -35,14 +38,18 @@ const Playtomic = () => {
             viewport={{ once: true }}
             className="relative"
           >
-            <img
+            <Image
               src={coachingData.playtomic.image}
               alt="Playtomic app"
+              width={400}
+              height={500}
               className="w-full h-96 object-cover rounded-2xl"
             />
-            <img
+            <Image
               src={coachingData.playtomic.playtomicImage}
               alt="Playtomic logo"
+              width={50}
+              height={50}
               className="absolute bottom-4 right-4 w-16 h-16 bg-white rounded-full p-2"
             />
           </motion.div>

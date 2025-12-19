@@ -1,5 +1,7 @@
+"use client"
+
 import { motion } from 'framer-motion'
-import { Link } from 'react-router-dom'
+import Link from 'next/link'
 import clubsData from '../../../languages/padelclubs.json'
 
 const Regions = () => {
@@ -73,7 +75,7 @@ const Regions = () => {
                       <p className="font-inter text-[#009FF3] font-medium mb-4">{club.status}</p>
                     )}
                     <Link
-                      to={club.link}
+                      href={club.link}
                       className="bg-[#009FF3] text-white px-6 py-3 font-inter font-medium hover:bg-[#0080cc] transition-colors uppercase"
                     >
                       View Club
