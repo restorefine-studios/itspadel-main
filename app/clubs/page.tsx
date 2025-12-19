@@ -3,17 +3,17 @@ import Regions from '../components/Clubs/Regions'
 import Playtomic from '../components/WhatIsPadel/Playtomic'
 import clubsData from '../../languages/padelclubs.json'
 
-const Clubs = () => {
+
+export default function Clubs () {
   return (
-    <div>
+    <main>
       <Hero
         image={clubsData.hero.backgroundImage}
         headline={clubsData.hero.headline}
       />
       <Regions />
       <Playtomic />
-    </div>
+    </main>
   )
 }
 
-export default Clubs

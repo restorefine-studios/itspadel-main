@@ -7,10 +7,16 @@ import Reviews from './components/Reviews'
 import Community from './components/Community'
 import FAQ from './components/FAQ'
 import homeData from '../languages/padelhome.json'
+import { Metadata } from "next"
 
-const Home = () => {
+export const metadata: Metadata = {
+  title: "It's Padel - Indoor Padel Court",
+  description: "Providing competitive padel sporting, immersive community, and a vibrant padel experience all over UK"
+}
+
+export default function Home () {
   return (
-    <div>
+    <main>
       <Hero
         image={homeData.hero.backgroundImage}
         headline={homeData.hero.headline}
@@ -27,8 +33,6 @@ const Home = () => {
        <Reviews />
        <Community />
        <FAQ />
-     </div>
+     </main>
   )
 }
-
-export default Home

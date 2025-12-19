@@ -5,9 +5,9 @@ import PrivateCoaching from '../components/WhatIsPadel/PrivateCoaching'
 import Playtomic from '../components/WhatIsPadel/Playtomic'
 import whatIsPadelData from '../../languages/padelwhatispadel.json'
 
-const WhatIsPadel = () => {
+export default function WhatIsPadel () {
   return (
-    <div>
+    <main>
       <Hero
         image={whatIsPadelData.hero.backgroundImage}
         headline={whatIsPadelData.hero.headline}
@@ -17,8 +17,7 @@ const WhatIsPadel = () => {
       <PadelVsTennis />
       <PrivateCoaching />
       <Playtomic />
-    </div>
+    </main>
   )
 }
 
-export default WhatIsPadel
