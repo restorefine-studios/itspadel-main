@@ -23,7 +23,7 @@ const Navbar = () => {
       <div className="container mx-auto px-8 md:px-4 py-6 flex justify-between items-center">
         {/* Logo */}
         <Link href="/">
-          <Image src="/itspadel-logo-main.svg" alt="Itspadel Logo" width={50} height={50} className="h-10" />
+          <Image src="/itspadel-logo-main.svg" alt="Itspadel Logo" width={75} height={75} className="h-14" />
         </Link>
 
         {/* Desktop Menu */}

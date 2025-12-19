@@ -22,16 +22,16 @@ const ContactForm = () => {
   }
 
   return (
-    <section className="py-20 px-8 md:px-16 lg:px-32">
+    <section className="py-12 md:py-20 px-0 md:px-16 lg:px-32">
       <div className="max-w-7xl mx-auto">
-        <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-start">
+        <div className="grid grid-cols-1 lg:grid-cols-2 gap-2 md:gap-12 items-start">
           {/* Left Column */}
-          <div>
-            <h2 className="font-bison text-4xl md:text-5xl mb-6">
+          <div className='px-8 md:px-0' >
+            <h2 className="font-bison text-4xl md:text-4xl mb-2 md:mb-6">
               START YOUR NEXT EVENT<br />
               WITH IT&apos;S PADEL TODAY!
             </h2>
-            <p className="font-inter text-base text-gray-700">
+            <p className="font-inter text-sm md:text-base text-black/50">
               We love events! Whether it&apos;s Christmas, birthdays, corporate, private, or going big with a full venue hire, we create bespoke experiences that are different.
             </p>
           </div>
@@ -41,7 +41,7 @@ const ContactForm = () => {
             <form onSubmit={handleSubmit(onSubmit)} className="space-y-6">
               <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
                 <div>
-                  <label className="block font-inter text-sm font-medium text-gray-700 mb-2">Firstname</label>
+                  <label className="tracking-tighter block font-inter text-sm font-medium text-black/50 mb-2">Firstname</label>
                   <input
                     {...register('firstname', { required: true })}
                     className="w-full px-4 py-3 bg-[#F0F0F0] focus:outline-none focus:ring-2 focus:ring-[#009FF3]"
@@ -50,7 +50,7 @@ const ContactForm = () => {
                   {errors.firstname && <span className="text-red-500 text-sm">This field is required</span>}
                 </div>
                 <div>
-                  <label className="block font-inter text-sm font-medium text-gray-700 mb-2">Lastname</label>
+                  <label className="tracking-tighter block font-inter text-sm font-medium text-black/50 mb-2">Lastname</label>
                   <input
                     {...register('lastname', { required: true })}
                     className="w-full px-4 py-3 bg-[#F0F0F0] focus:outline-none focus:ring-2 focus:ring-[#009FF3]"
@@ -61,7 +61,7 @@ const ContactForm = () => {
               </div>
 
               <div>
-                <label className="block font-inter text-sm font-medium text-gray-700 mb-2">Email</label>
+                <label className="tracking-tighter block font-inter text-sm font-medium text-black/50 mb-2">Email</label>
                 <input
                   {...register('email', { required: true, pattern: /^\S+@\S+$/i })}
                   className="w-full px-4 py-3 bg-[#F0F0F0] focus:outline-none focus:ring-2 focus:ring-[#009FF3]"
@@ -71,7 +71,7 @@ const ContactForm = () => {
               </div>
 
               <div>
-                <label className="block font-inter text-sm font-medium text-gray-700 mb-2">Phone Number</label>
+                <label className="tracking-tighter block font-inter text-sm font-medium text-black/50 mb-2">Phone Number</label>
                 <input
                   {...register('phone', { required: true })}
                   className="w-full px-4 py-3 bg-[#F0F0F0] focus:outline-none focus:ring-2 focus:ring-[#009FF3]"
@@ -81,7 +81,7 @@ const ContactForm = () => {
               </div>
 
               <div>
-                <label className="block font-inter text-sm font-medium text-gray-700 mb-2">Select Club</label>
+                <label className="tracking-tighter block font-inter text-sm font-medium text-black/50 mb-2">Select Club</label>
                 <select
                   {...register('club', { required: true })}
                   className="w-full px-4 py-3 bg-[#F0F0F0] focus:outline-none focus:ring-2 focus:ring-[#009FF3]"
@@ -98,7 +98,7 @@ const ContactForm = () => {
 
               <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
                 <div>
-                  <label className="block font-inter text-sm font-medium text-gray-700 mb-2">Desired Date</label>
+                  <label className="tracking-tighter block font-inter text-sm font-medium text-black/50 mb-2">Desired Date</label>
                   <input
                     {...register('date', { required: true })}
                     className="w-full px-4 py-3 bg-[#F0F0F0] focus:outline-none focus:ring-2 focus:ring-[#009FF3]"
@@ -108,7 +108,7 @@ const ContactForm = () => {
                 </div>
 
                 <div>
-                  <label className="block font-inter text-sm font-medium text-gray-700 mb-2">Number of guests</label>
+                  <label className="tracking-tighter block font-inter text-sm font-medium text-black/50 mb-2">Number of guests</label>
                   <input
                     {...register('guests', { required: true, min: 1 })}
                     className="w-full px-4 py-3 bg-[#F0F0F0] focus:outline-none focus:ring-2 focus:ring-[#009FF3]"
@@ -120,7 +120,7 @@ const ContactForm = () => {
               </div>
 
               <div>
-                <label className="block font-inter text-sm font-medium text-gray-700 mb-2">Add a message</label>
+                <label className="tracking-tighter block font-inter text-sm font-medium text-black/50 mb-2">Add a message</label>
                 <textarea
                   {...register('message')}
                   className="w-full px-4 py-3 bg-[#F0F0F0] focus:outline-none focus:ring-2 focus:ring-[#009FF3] h-32 resize-none"

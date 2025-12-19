@@ -2,7 +2,7 @@
   "hero": {
     "headline": "New To Padel?",
     "paragraph": "Padel is a fast-paced and addictive racket sport that combines the best elements of tennis and squash.",
-    "backgroundImage": "/itspadel-how-to-padel.webp"
+    "backgroundImage": "/itspadel-personal-coaching.webp"
   },
   "howToPlay": {
     "headline": "How To Play Padel",
@@ -27,12 +27,12 @@
       },
       {
         "title": "The Rules",
-        "image": "",
+        "image": "/itspadel-game-rackets.webp",
         "content": "Padel matches should be played on a regulation padel court that is 20m x 10m. If the ball goes directly into the opponent's glass wall, it counts as out. Before the ball hits the opponent's glass wall, it must bounce on the ground. You can play it on the volley (not on serve), on the half-volley or let the ball bounce on a glass wall. You can also hit the ball on your own glass wall to get it over to your opponent's half of the field. You must not hit the ball in the grid/cage on your side. The rules in padel are in many cases similar to the rules of tennis, but there are some exceptions, such as rules regarding the walls. Padel games shall be played between two pairs of players using regulation padel racquets. Each match begins with a serve, which must be done underarm but like tennis must go diagonally into the service box in the opponent's court. Both teams must attempt to score more points than their opponents. The opposition wins a point if: the ball bounces twice, the ball strikes you or a teammate or the ball hits the wire fencing or another fixture before going over the net or going into the opponent's court (out of bounds)."
       },
       {
         "title": "The Score",
-        "image": "",
+        "image": "/itspadel-game-rackets.webp",
         "content": "Padel follows the same scoring structure as tennis. However, its unique rules, allowing players to use both the back and side walls, lead to longer rallies compared to a typical tennis match. In padel, success is driven more by tactics than by sheer power or strength. Matches are typically played over the best of 3 or 5 sets, with each set requiring 6 game victories to win. Scoring within a game progresses as 0, 15, 30, 40, and then game. If the score reaches 40-40, players must secure a two-point lead to win the game. To win a set, a player or team must be the first to secure 6 games. If the score ties at 5-5, the competition continues until someone wins 7 games. Should the set reach 6-6, a tie-break is played. This tie-break is won by the first player or team to reach 7 points, but they must also lead by at least 2 points to claim victory."
       },
       {
@@ -42,14 +42,14 @@
       },
       {
         "title": "Glass Walls",
-        "image": "",
+        "image": "/itspadel-game-rackets.webp",
         "content": "When receiving a ball, you can allow it to bounce off the glass wall after it has hit the ground; the ball remains in play. You can also use your own glass wall to return the ball, which can be particularly helpful when you're in a tough spot. The grid can also keep the ball in play when receiving, as long as the ball first bounces on the ground before hitting the grid (this rule doesn't apply to the serve). If you hit the ball into the grid on your side of the court, you lose the point. However, if the ball on the opponent's side goes directly into their grid or glass wall without bouncing on the ground first, it is considered out of play."
       }
     ]
   },
   "padelVsTennis": {
     "headline": "Padel vs. Tennis: What's the Difference?",
-    "paragraph": "Padel and tennis may look alike, but there are some fun differences! Padel is played on a smaller court with walls, adding a unique twist where the ball can bounce off them. The rackets are solid and the game is more about teamwork and strategy. We think it's better than tennis but we might be biased. Why not give it a try at Pure Padel and experience the difference for yourself?",
+    "paragraph": "Padel and tennis may look alike, but there are some fun differences! Padel is played on a smaller court with walls, adding a unique twist where the ball can bounce off them. The rackets are solid and the game is more about teamwork and strategy. We think it&apos;s better than tennis but we might be biased. Why not give it a try at Its Padel and experience the difference for yourself?",
     "ctaText": "Our Clubs",
     "ctaLink": "/clubs"
   },

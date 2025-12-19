@@ -6,10 +6,11 @@ import Services from './components/Home/Services'
 import Reviews from './components/Reviews'
 import Community from './components/Community'
 import FAQ from './components/FAQ'
+import homeData from '../languages/padelhome.json'
 import { Metadata } from "next"
 
 export const metadata: Metadata = {
-  title: "It's Padel - Indoor Padel Court",
+  title: "Its Padel - Indoor Padel Court",
   description: "Providing competitive padel sporting, immersive community, and a vibrant padel experience all over UK"
 }
 
@@ -17,13 +18,13 @@ export default function Home () {
   return (
     <main>
       <Hero
-        image="https://images.unsplash.com/photo-1622279457486-62dcc4a431d6?q=80&w=1740&auto=format&fit=crop"
-        headline="Discover The Padel Lifestyle"
-        paragraph="Where the rallies bring you in, but the people make you stay.Play, connect and feel part of something real"
-        ctaText="Select Your Club"
-        ctaLink="/clubs"
-        cta2Text="How to Book"
-        cta2Link="https://app.playtomic.io/?utm_source=web-2025"
+        image={homeData.hero.backgroundImage}
+        headline={homeData.hero.headline}
+        paragraph={homeData.hero.paragraph}
+        ctaText={homeData.hero.ctaText}
+        ctaLink={homeData.hero.ctaLink}
+        cta2Text={homeData.hero.cta2Text}
+        cta2Link={homeData.hero.cta2Link}
       />
       <DownloadPadel />
       <FindYourClub />

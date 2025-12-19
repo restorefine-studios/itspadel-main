@@ -1,37 +1,40 @@
 import Link from 'next/link'
 import Image from 'next/image'
+import whatIsPadelData from '../../../languages/padelwhatispadel.json'
 
 const Playtomic = () => {
+  const data = whatIsPadelData.playtomic
+
   return (
-    <section className="py-20 px-8 md:px-16 lg:px-32">
+    <section className="py-12 md:py-20 px-8 md:px-16 lg:px-32">
       <div className="max-w-7xl mx-auto">
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
-          <div>
+          <div className="animate-fade-in-0">
             <h2 className="font-bison text-4xl md:text-5xl mb-6">
-              Book your court by downloading the Playtomic app
+              {data.headline}
             </h2>
-            <p className="font-inter text-base text-gray-700 mb-8">
-              Start playing today by downloading Playtomic.
+            <p className="font-inter text-sm md:text-base text-black/50 mb-8">
+              {data.paragraph}
             </p>
             <Link
-              href="https://app.playtomic.io/?utm_source=web-2025"
+              href={data.ctaLink}
               target="_blank"
               rel="noopener noreferrer"
               className="bg-[#009FF3] text-white px-6 py-3 font-inter font-medium hover:bg-[#0080cc] transition-colors uppercase"
             >
-              Download Playtomic
+              {data.ctaText}
             </Link>
           </div>
-          <div className="relative">
+          <div className="relative animate-fade-in-1">
             <Image
-              src="/playtomic-cover-image.webp"
+              src={data.image}
               alt="Playtomic app"
               width={400}
               height={500}
               className="w-full h-96 object-cover rounded-2xl"
             />
             <Image
-              src="/playtomic-logo.svg"
+              src={data.playtomicImage}
               alt="Playtomic logo"
               width={400}
               height={500}

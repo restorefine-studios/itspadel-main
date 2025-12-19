@@ -1,5 +1,3 @@
-"use client"
-
 import { Instagram, Twitter, ArrowRight } from 'lucide-react'
 import Image from 'next/image'
 
@@ -9,14 +7,14 @@ const Footer = () => {
   return (
     <footer className="font-inter mt-24">
       {/* First Container */}
-      <div className="px-8 md:px-16 lg:px-32 py-8 border-t border-b border-gray-200">
+      <div className="px-8 md:px-16 lg:px-32 py-6 border-t border-b border-gray-200 animate-fade-in-0">
         <div className="max-w-7xl mx-auto flex justify-between items-center">
           <Image
-            src="/itspadel-logo-main.svg"
+            src="/itspadel-logo-alt.svg"
             alt="Itspadel Logo"
-            width={50}
-            height={50}
-            className="h-8"
+            width={100}
+            height={100}
+            className="h-16 object-contain"
           />
           <div className="flex space-x-4">
             <a href="https://instagram.com" target="_blank" rel="noopener noreferrer" className="text-gray-600 hover:text-[#009FF3]">
@@ -30,18 +28,18 @@ const Footer = () => {
       </div>
 
       {/* Second Container */}
-      <div className="px-8 md:px-16 lg:px-32 py-20 border-b border-gray-200">
+      <div className="px-8 md:px-16 lg:px-32 py-12 md:py-20 border-b border-gray-200 animate-fade-in-1">
         <div className="max-w-7xl mx-auto grid grid-cols-1 lg:grid-cols-2 gap-12">
           {/* Left Column */}
           <div className="lg:w-1/2">
-            <p className="text-gray-700 mb-6">
+            <p className="text-black/50 mb-6">
               Stay up to date with the latest news, tips and exclusive offers by joining our awesome newsletter.
             </p>
             <div className="relative">
               <input
                 type="email"
                 placeholder="example@gmail.com"
-                className="w-full px-0 py-3 border-b border-gray-300 tracking-tighter text-base"
+                className="w-full px-0 py-3 border-b border-gray-300 bg-transparent tracking-tighter text-sm md:text-base"
               />
               <div className="absolute right-3 top-1/2 transform -translate-y-1/2 text-black/50">
                 <ArrowRight className="w-5 h-5" />
@@ -85,7 +83,7 @@ const Footer = () => {
       </div>
 
       {/* Third Container */}
-      <div className="px-8 md:px-16 lg:px-32 py-10">
+      <div className="px-8 md:px-16 lg:px-32 py-10 animate-fade-in-2">
         <div className="max-w-7xl mx-auto text-right">
           <p className="text-gray-600 text-sm">
             All Rights Reserved. Copyright {currentYear}

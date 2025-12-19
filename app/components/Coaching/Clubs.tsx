@@ -2,11 +2,11 @@ import Link from 'next/link'
 
 const Clubs = () => {
   return (
-    <section className="py-20 px-8 md:px-16 lg:px-32 bg-gray-50">
+    <section className="py-12 md:py-20 px-8 md:px-16 lg:px-32 bg-gray-50">
       <div className="max-w-7xl mx-auto">
         <div className="text-center mb-12">
-          <h2 className="font-bison text-4xl md:text-5xl mb-4">Our Clubs</h2>
-          <p className="font-inter text-base text-gray-600">Choose your location for coaching</p>
+          <h2 className="font-bison text-4xl md:text-6xl mb-4">Our Clubs</h2>
+          <p className="font-inter text-sm md:text-base text-gray-600">Choose your location for coaching</p>
         </div>
 
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">

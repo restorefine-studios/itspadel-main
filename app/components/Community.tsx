@@ -1,24 +1,35 @@
 "use client"
 
+import { useState, useEffect } from 'react'
 import Image from 'next/image'
+import communityData from '../../languages/padelcommunity.json'
 import { Hash, Instagram, Youtube, Twitch } from 'lucide-react'
 
 
 
 export default function Community() {
+  const [currentIndex, setCurrentIndex] = useState(0)
+
+  useEffect(() => {
+    const interval = setInterval(() => {
+      setCurrentIndex((prev) => (prev + 1) % communityData.images.length)
+    }, 6000)
+    return () => clearInterval(interval)
+  }, [])
+
   return (
     <section className="py-24 px-8 md:px-16 lg:px-32 overflow-visible">
       <div className="max-w-7xl mx-auto">
 
         {/* Heading */}
-        <div className="w-full mx-auto grid place-items-center text-center mb-16">
+        <div className="w-full mx-auto grid place-items-center text-center md:mb-16 mb-8">
           <h2 className="font-bison max-w-[500px] text-4xl md:text-6xl leading-tight">
-            CONNECT WITH OUR ONLINE COMMUNITY
+            {communityData.headline}
           </h2>
         </div>
 
-        {/* Cards */}
-        <div className="relative w-full h-[40rem] mx-auto flex justify-center">
+        {/* Cards - Desktop */}
+        <div className="hidden md:flex relative w-full h-[40rem] mx-auto justify-center">
           <div
             className="absolute w-[22rem] h-[28rem] rounded-[2rem] overflow-hidden shadow-lg"
             style={{
@@ -27,8 +38,8 @@ export default function Community() {
             }}
           >
             <Image
-              src="/itspadel-gameplay-gear.webp"
-              alt="Padel player in action"
+              src={communityData.images[0].image}
+              alt={communityData.images[0].alt}
               width={300}
               height={500}
               className="w-full h-full object-cover"
@@ -42,8 +53,8 @@ export default function Community() {
             }}
           >
             <Image
-              src="/itspadel-social-lifestyle.webp"
-              alt="Padel court view"
+              src={communityData.images[1].image}
+              alt={communityData.images[1].alt}
               width={300}
               height={500}
               className="w-full h-full object-cover"
@@ -57,8 +68,8 @@ export default function Community() {
             }}
           >
             <Image
-              src="/itspadel-gameplay-lifestyle.webp"
-              alt="Padel equipment"
+              src={communityData.images[2].image}
+              alt={communityData.images[2].alt}
               width={300}
               height={500}
               className="w-full h-full object-cover"
@@ -72,8 +83,8 @@ export default function Community() {
             }}
           >
             <Image
-              src="/itspadel-lifestyle.webp"
-              alt="Padel match"
+              src={communityData.images[3].image}
+              alt={communityData.images[3].alt}
               width={300}
               height={500}
               className="w-full h-full object-cover"
@@ -87,8 +98,8 @@ export default function Community() {
             }}
           >
             <Image
-              src="/itspadel-gameplay.webp"
-              alt="Padel players celebrating"
+              src={communityData.images[5].image}
+              alt={communityData.images[5].alt}
               width={300}
               height={500}
               className="w-full h-full object-cover"
@@ -96,8 +107,28 @@ export default function Community() {
           </div>
         </div>
 
+        {/* Cards - Mobile Carousel */}
+        <div className="md:hidden relative overflow-hidden animate-fade-in-1">
+          <div
+            className="flex"
+            style={{ transform: `translateX(-${currentIndex * 100}%)`, transition: 'transform 0.8s ease-in-out' }}
+          >
+            {communityData.images.map((image, index) => (
+              <div key={index} className="w-full flex-shrink-0">
+                <Image
+                  src={image.image}
+                  alt={image.alt}
+                  width={300}
+                  height={500}
+                  className="w-full h-[28rem] object-cover rounded-[2rem] mx-auto"
+                />
+              </div>
+            ))}
+          </div>
+        </div>
+
         {/* Intro */}
-        <p className="text-center mt-0 mb-0 font-inter text-base">
+        <p className="text-center mt-4 md:mt-0 mb-0 font-inter text-sm md:text-base">
           Follow us on social media
         </p>
 

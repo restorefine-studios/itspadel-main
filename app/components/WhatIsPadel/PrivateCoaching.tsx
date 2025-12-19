@@ -1,21 +1,24 @@
 import Link from 'next/link'
+import whatIsPadelData from '../../../languages/padelwhatispadel.json'
 
 const PrivateCoaching = () => {
+  const data = whatIsPadelData.privateCoaching
+
   return (
-    <section className="py-20 px-8 md:px-16 lg:px-32 bg-gray-50">
+    <section className="py-12 md:py-20 px-8 md:px-16 lg:px-32 bg-gray-50">
       <div className="max-w-7xl mx-auto text-center">
-        <div>
+        <div className="animate-fade-in-0">
           <h2 className="font-bison text-4xl md:text-5xl mb-6">
-            Private Coaching
+            {data.headline}
           </h2>
-          <p className="font-inter text-base text-gray-700 mb-8 max-w-2xl mx-auto">
-            Elevate your padel game with 1-on-1, paired or group coaching sessions available with our expert coaches.
+          <p className="font-inter text-sm md:text-base text-black/50 mb-8 max-w-2xl mx-auto">
+            {data.paragraph}
           </p>
           <Link
-            href="/coaching"
+            href={data.ctaLink}
             className="bg-[#009FF3] text-white px-6 py-3 font-inter font-medium hover:bg-[#0080cc] transition-colors uppercase"
           >
-            Enquire Now
+            {data.ctaText}
           </Link>
         </div>
       </div>

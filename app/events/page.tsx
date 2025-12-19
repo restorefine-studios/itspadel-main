@@ -1,13 +1,14 @@
 import Hero from '../components/Hero'
 import ContactForm from '../components/Events/ContactForm'
+import eventsData from '../../languages/padelevents.json'
 
 export default function Events () {
   return (
     <main>
       <Hero
-        image="/itspadel-event-gameplay.webp"
-        headline="Ready For Your Next Padel Event?"
-        paragraph="Where the rallies bring you in, but the people make you stay. Play, connect and feel part of something real"
+        image={eventsData.hero.backgroundImage}
+        headline={eventsData.hero.headline}
+        paragraph={eventsData.hero.paragraph}
       />
       <ContactForm />
     </main>

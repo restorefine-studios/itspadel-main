@@ -2,16 +2,16 @@ import Image from 'next/image'
 
 const DownloadPadel = () => {
   return (
-    <section className="px-8 py-10 md:py-20">
+    <section className="px-0 md:px-24 py-10 md:py-20">
       <div className="container mx-auto flex flex-col md:flex-row items-start md:items-center justify-between gap-8 md:gap-20">
         {/* Left: Rounded gray container with image */}
         <div className="flex-1 rounded-2xl">
-          <Image src="/playtomic-cover-image.webp" alt="Playtomic Cover" width={400} height={400} className="w-full h-[400px] aspect-square rounded-2xl object-cover" />
+          <Image src="/playtomic-cover-image.webp" alt="Playtomic Cover" width={400} height={400} className="w-[600px] md:w-full h-[400px] aspect-auto rounded-2xl object-cover" />
         </div>
         {/* Right: Logo and text */}
         <div className="flex-1 text-left h-full flex flex-col justify-between items-start">
           <Image src="/playtomic-logo.svg" alt="Playtomic Logo" width={200} height={200} className="h-12 mb-4 mx-0" />
-          <h2 className="font-bison font-bold text-5xl md:text-6xl mb-4 tracking-tighter">
+          <h2 className="font-bison font-bold text-4xl md:text-6xl mb-4">
             BOOK YOUR COURT BY<br />
             DOWNLOADING<br />
             THE PLAYTOMIC APP

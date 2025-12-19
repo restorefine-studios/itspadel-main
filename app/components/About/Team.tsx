@@ -2,10 +2,10 @@ import Image from 'next/image'
 
 const Team = () => {
   return (
-    <section className="py-20 px-8 md:px-16 lg:px-32">
+    <section className="py-12 md:py-20 px-8 md:px-16 lg:px-32">
       <div className="max-w-7xl mx-auto">
         <div className="text-center mb-12">
-          <h2 className="font-bison text-4xl md:text-5xl mb-4">Meet Our Team</h2>
+          <h2 className="font-bison text-4xl md:text-6xl mb-4">Meet Our Team</h2>
         </div>
 
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
