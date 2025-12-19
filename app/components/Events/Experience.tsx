@@ -1,3 +1,4 @@
+import Image from 'next/image'
 import eventsData from '../../../languages/padelevents.json'
 
 const Experience = () => {
@@ -6,9 +7,11 @@ const Experience = () => {
       <div className="max-w-7xl mx-auto">
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
           <div>
-            <img
+            <Image
               src="https://images.unsplash.com/photo-1551698618-1dfe5d97d256?q=80&w=1740&auto=format&fit=crop"
               alt="Padel event"
+              width={400}
+              height={500}
               className="w-full h-96 object-cover rounded-2xl"
             />
           </div>

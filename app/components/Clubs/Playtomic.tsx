@@ -26,15 +26,13 @@ const Playtomic = () => {
             <Image
               src={clubsData.playtomic.image}
               alt="Playtomic app"
-              width={400}
-              height={500}
+           
               className="w-full h-96 object-cover rounded-2xl"
             />
             <Image
               src={clubsData.playtomic.playtomicImage}
               alt="Playtomic logo"
-              width={400}
-              height={500}
+             
               className="absolute bottom-4 right-4 w-16 h-16 bg-white rounded-full p-2"
             />
           </div>

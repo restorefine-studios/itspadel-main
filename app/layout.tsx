@@ -1,16 +1,16 @@
 import type { Metadata } from "next";
-import { Geist, Geist_Mono } from "next/font/google";
+import { Inter, JetBrains_Mono } from "next/font/google";
 import "./globals.css";
 import Navbar from "./components/Navbar";
 import Footer from "./components/Footer";
 
-const geistSans = Geist({
-  variable: "--font-geist-sans",
+const interSans = Inter({
+  variable: "--font-inter-sans",
   subsets: ["latin"],
 });
 
-const geistMono = Geist_Mono({
-  variable: "--font-geist-mono",
+const jetbrainsMono = JetBrains_Mono({
+  variable: "--font-jetbrains-mono",
   subsets: ["latin"],
 });
 
@@ -19,7 +19,7 @@ export const metadata: Metadata = {
   description:
     'itspadel is a modern padel club in East Kilbride offering premium padel courts, competitive play, and a vibrant padel community. Your game starts here.',
     icons: {
-    icon: '/itspadel-logo-main.svg',
+    icon: '/itspadel-favicon.ico',
   },
   keywords: [
     'padel East Kilbride',
@@ -67,7 +67,7 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body
-        className={`${geistSans.variable} ${geistMono.variable} antialiased`}
+        className={`${interSans.variable} ${jetbrainsMono.variable} antialiased`}
       >
         <Navbar />
         <main className="flex-grow">
