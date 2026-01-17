@@ -1,36 +1,36 @@
 {
-  "hero": {
-    "headline": "Its Padel Club Coaching",
-    "backgroundImage": "/itspadel-personal-coaching.webp"
-  },
-  "clubs": [
-    {
-      "name": "Alderley Park",
-      "link": "/padel-coaching-alderley-park"
-    },
-    {
-      "name": "Manchester",
-      "link": "/padel-coaching-manchester"
-    },
-    {
-      "name": "Darlington",
-      "link": "/padel-coaching-darlington"
-    },
-    {
-      "name": "Stockport",
-      "link": "/padel-coaching-stockport"
-    },
-    {
-      "name": "Nottingham",
-      "link": "/padel-coaching-nottingham"
-    }
-  ],
-  "playtomic": {
-    "headline": "Book your court by downloading the Playtomic app",
-    "paragraph": "Start playing today by downloading Playtomic.",
-    "ctaText": "Download Playtomic",
-    "ctaLink": "https://app.playtomic.io/?utm_source=web-2025",
-    "image": "/playtomic-cover-image.webp",
-    "playtomicImage": "/playtomic-logo.svg"
-  }
+	"hero": {
+		"headline": "Its Padel Club Coaching",
+		"backgroundImage": "/itspadel-personal-coaching.webp"
+	},
+	"clubs": [
+		{
+			"name": "Alderley Park",
+			"link": "/padel-coaching-alderley-park"
+		},
+		{
+			"name": "Manchester",
+			"link": "/padel-coaching-manchester"
+		},
+		{
+			"name": "Darlington",
+			"link": "/padel-coaching-darlington"
+		},
+		{
+			"name": "Stockport",
+			"link": "/padel-coaching-stockport"
+		},
+		{
+			"name": "Nottingham",
+			"link": "/padel-coaching-nottingham"
+		}
+	],
+	"playtomic": {
+		"headline": "Book Your Court Now On The Playtomic App",
+		"paragraph": "Start now by tapping the button below",
+		"ctaText": "Book Its Padel",
+		"ctaLink": "https://playtomic.com/clubs/its-padel",
+		"image": "/playtomic-cover-image.webp",
+		"playtomicImage": "/playtomic-logo.svg"
+	}
 }

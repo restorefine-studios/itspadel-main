@@ -1,54 +1,51 @@
 {
-  "hero": {
-    "headline": "Discover The Padel Lifestyle",
-    "paragraph": "Where the rallies bring you in, but the people make you stay.Play, connect and feel part of something real",
-    "ctaText": "Select Your Club",
-    "ctaLink": "/clubs",
-    "cta2Text": "How to Book",
-    "cta2Link": "https://app.playtomic.io/?utm_source=web-2025",
-    "backgroundImage": "/itspadel-homehero-bg.webp"
-  },
-  
-  
-  "fastestGrowing": {
-    "headline": "The fastest growing sport in the world",
-    "paragraph": "Padel is a fast-paced and addictive racket sport that combines the best elements of tennis and squash. With a smaller court and walls, it's extremely easy to pick up! With two clubs built already in the North West and more on the way, Its Padel will make sure you have bringing the world&apos;s fastest growing sport to your doorstep!",
-    "cta1Text": "Learn More",
-    "cta1Link": "/what-is-padel",
-    "cta2Text": "View Clubs",
-    "cta2Link": "/clubs",
-    "image": "/itspadel-gameplay-court.webp"
-  },
-  "services": [
-    {
-      "headline": "Events",
-      "paragraph": "Invite your colleagues and clients to experience the fastest growing sport in a unique and private setting.",
-      "ctaText": "Enquire Now",
-      "ctaLink": "/events",
-      "image": "/itspadel-event-gamenight.webp"
-    },
-    {
-      "headline": "Coaching",
-      "paragraph": "Our expert coaches offer personalised training at all our clubs to help elevate your padel game to the next level!",
-      "ctaText": "Enquire Now",
-      "ctaLink": "/coaching",
-      "image": "/itspadel-model-shoot.webp"
-    },
-    {
-      "headline": "Join The Club",
-      "paragraph": "We operate social clubs where you can meet like-minded players, all with a common interest in this exhilarating sport.",
-      "ctaText": "Enquire Now",
-      "ctaLink": "/clubs",
-      "image": "/itspadel-footwear.webp"
-    },
-    {
-      "headline": "It's Coffee",
-      "paragraph": "Share a cup of coffee and a bite to eat with friends old and new in our welcoming café spaces.",
-      "ctaText": "Enquire Now",
-      "ctaLink": "/",
-      "image": "/itscoffee-main.webp"
-    }
-  ]
- 
-  
+	"hero": {
+		"headline": "Discover The Padel Lifestyle",
+		"paragraph": "Where the rallies bring you in, but the people make you stay.Play, connect and feel part of something real",
+		"ctaText": "Select Your Club",
+		"ctaLink": "/clubs",
+		"cta2Text": "How to Book",
+		"cta2Link": "https://playtomic.com/clubs/its-padel",
+		"backgroundImage": "/itspadel-homehero-bg.webp"
+	},
+
+	"fastestGrowing": {
+		"headline": "The fastest growing sport in the world",
+		"paragraph": "Padel is a fast-paced and addictive racket sport that combines the best elements of tennis and squash. With a smaller court and walls, it's extremely easy to pick up! With two clubs built already in the North West and more on the way, Its Padel will make sure you have bringing the world&apos;s fastest growing sport to your doorstep!",
+		"cta1Text": "Learn More",
+		"cta1Link": "/what-is-padel",
+		"cta2Text": "View Clubs",
+		"cta2Link": "/clubs",
+		"image": "/itspadel-gameplay-court.webp"
+	},
+	"services": [
+		{
+			"headline": "Events",
+			"paragraph": "Invite your colleagues and clients to experience the fastest growing sport in a unique and private setting.",
+			"ctaText": "Enquire Now",
+			"ctaLink": "/events",
+			"image": "/itspadel-event-gamenight.webp"
+		},
+		{
+			"headline": "Coaching",
+			"paragraph": "Our expert coaches offer personalised training at all our clubs to help elevate your padel game to the next level!",
+			"ctaText": "Enquire Now",
+			"ctaLink": "/coaching",
+			"image": "/itspadel-model-shoot.webp"
+		},
+		{
+			"headline": "Join The Club",
+			"paragraph": "We operate social clubs where you can meet like-minded players, all with a common interest in this exhilarating sport.",
+			"ctaText": "Enquire Now",
+			"ctaLink": "/clubs",
+			"image": "/itspadel-footwear.webp"
+		},
+		{
+			"headline": "It's Coffee",
+			"paragraph": "Share a cup of coffee and a bite to eat with friends old and new in our welcoming café spaces.",
+			"ctaText": "Enquire Now",
+			"ctaLink": "/",
+			"image": "/itscoffee-main.webp"
+		}
+	]
 }
