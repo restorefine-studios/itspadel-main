@@ -23,7 +23,7 @@ const Playtomic = () => {
 					</div>
 					<div className="relative">
 						<Image
-							src="/playtomic-cover-image.webp"
+							src="/locations/itspadel-booking.webp"
 							alt="Playtomic app"
 							width={400}
 							height={500}

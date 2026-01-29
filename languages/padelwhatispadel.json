@@ -9,7 +9,7 @@
 		"tabs": [
 			{
 				"title": "Gear",
-				"image": "/itspadel-game-rackets.webp",
+				"image": "/itspadel-rackets.webp",
 				"content": {
 					"racket": {
 						"headline": "Padel Racket",
@@ -64,7 +64,7 @@
 		"paragraph": "Start now by tapping the button below",
 		"ctaText": "Book Its Padel",
 		"ctaLink": "https://playtomic.com/clubs/its-padel",
-		"image": "/playtomic-cover-image.webp",
+		"image": "/locations/itspadel-booking.webp",
 		"playtomicImage": "/playtomic-logo.svg"
 	}
 }

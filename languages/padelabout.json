@@ -1,44 +1,43 @@
 {
-  "hero": {
-    "headline": "We Are Its Padel",
-    "paragraph": "Where the rallies bring you in, but the people make you stay. Play, connect and feel part of something real",
-    "ctaText": "How To Play",
-    "ctaLink": "/what-is-padel",
-    "backgroundImage": "/itspadel-gameplay-night.webp"
-  },
-  "mission": {
-    "headline": "The Its Padel Mission",
-    "paragraph": "Its Padel is on a journey to help make padel the next generation of racquet sports in the UK. With the aim of building 30 clubs across the UK within 5 years, we are dedicated to providing exceptional facilities, top-notch coaching, and a welcoming atmosphere for players of all levels. Join the hype and experience the passion and excitement of padel like never before.",
-    "ctaText": "How To Play",
-    "ctaLink": "/what-is-padel",
-    "image": "/itspadel-gameplay-court.webp"
-  },
-  "values": {
-    "headline": "Values, The Its Padel Way!",
-    "paragraph": "Padel is a fast-paced and addictive racket sport that combines elements  of tennis and squash. With a smaller court and walls, it’s extremely  easy to pick up! With two clubs built already in the North West and more on the way, Its Padel will make sure you have bringing the world’s  fastest growing sport to your doorstep!",
-    "ctaText": "How To Play",
-    "ctaLink": "/what-is-padel",
-    "image": "/itspadel-game-coach.webp"
-  },
-  "people": {
-    "headline": "Meet Our Team"
-  },
-  "team": [
-    {
-      "name": "Nathan Simons",
-      "role": "Co-Founder & Managing Director",
-      "image": "/itspadel-court-manager.webp"
-    },
-    {
-      "name": "Angela Martins",
-      "role": "Head of Commercial",
-      "image": "/itspadel-head-of-commercial.webp"
-    },
-    {
-      "name": "Frederick Benson",
-      "role": "Regional Manager",
-      "image": "/itspadel-business-officer.webp"
-    }
-  ]
- 
+	"hero": {
+		"headline": "We Are It's Padel",
+		"paragraph": "Where the rallies bring you in, but the people make you stay. Play, connect and feel part of something real",
+		"ctaText": "How To Play",
+		"ctaLink": "/what-is-padel",
+		"backgroundImage": "/itspadel-about.webp"
+	},
+	"mission": {
+		"headline": "The Its Padel Mission",
+		"paragraph": "Its Padel is on a journey to help make padel the next generation of racquet sports in the UK. With the aim of building 30 clubs across the UK within 5 years, we are dedicated to providing exceptional facilities, top-notch coaching, and a welcoming atmosphere for players of all levels. Join the hype and experience the passion and excitement of padel like never before.",
+		"ctaText": "How To Play",
+		"ctaLink": "/what-is-padel",
+		"image": "/itspadel-gameplay-court.webp"
+	},
+	"values": {
+		"headline": "Values, The Its Padel Way!",
+		"paragraph": "Padel is a fast-paced and addictive racket sport that combines elements  of tennis and squash. With a smaller court and walls, it’s extremely  easy to pick up! With two clubs built already in the North West and more on the way, Its Padel will make sure you have bringing the world’s  fastest growing sport to your doorstep!",
+		"ctaText": "How To Play",
+		"ctaLink": "/what-is-padel",
+		"image": "/itspadel-game-coach.webp"
+	},
+	"people": {
+		"headline": "Meet Our Team"
+	},
+	"team": [
+		{
+			"name": "Nathan Simons",
+			"role": "Co-Founder & Managing Director",
+			"image": "/itspadel-court-manager.webp"
+		},
+		{
+			"name": "Angela Martins",
+			"role": "Head of Commercial",
+			"image": "/itspadel-head-of-commercial.webp"
+		},
+		{
+			"name": "Frederick Benson",
+			"role": "Regional Manager",
+			"image": "/itspadel-business-officer.webp"
+		}
+	]
 }

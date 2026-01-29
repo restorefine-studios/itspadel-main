@@ -20,7 +20,7 @@ const Clubs = () => {
 						className="w-full md:w-1/3 flex-shrink-0 px-2">
 						<div className="relative rounded-2xl overflow-hidden cursor-pointer h-96">
 							<Image
-								src="/locations/itspadel-mock-location-lightwater.webp"
+								src="/locations/itspadel-glasgow.webp"
 								alt={"its-padel-eastkilbride"}
 								width={400}
 								height={450}

@@ -7,7 +7,7 @@ const DownloadPadel = () => {
 				{/* Left: Rounded gray container with image */}
 				<div className="flex-1 rounded-2xl">
 					<Image
-						src="/playtomic-cover-image.webp"
+						src="/locations/itspadel-booking.webp"
 						alt="Playtomic Cover"
 						width={400}
 						height={400}

@@ -1,25 +1,44 @@
 {
-  "hero": {
-    "headline": "Ready For Your Next Padel Event?",
-    "paragraph": "Where the rallies bring you in, but the people make you stay. Play, connect and feel part of something real",
-    "backgroundImage": "/itspadel-event-gameplay.webp"
-  },
-  "description": {
-    "paragraph": "At Its Padel, we love events! Whether it&apos;s Christmas, birthdays, corporate, private, or going big with a full venue hire, we create bespoke experiences that are different."
-  },
-  "companies": [
-    "JMW", "Kuits", "LDC", "Pretty", "Together", "TPA", "New Balance", "K3", "EY", "Match Room", "City", "Sky", "MG", "Capra", "Carmex", "Squire", "Francis", "Amazon", "Sterling", "Deloitte"
-  ],
-  "whatMakesDifferent": {
-    "headline": "What makes our corporate events different",
-    "paragraph": "Here at Its Padel, our bespoke events give you the perfect opportunity to invite your colleagues and clients to experience the fastest growing sport in a unique and private setting, whatever the occasion."
-  },
-  "experience": {
-    "headline": "Experience the best Padel facilities in the UK",
-    "paragraph": "If you&apos;re planning a corporate event or private hire, Its Padel is built for it. Our clubs combine the best padel facilities in the UK with everything you need for a great day — showers, changing rooms, breakout spaces, and relaxed social areas. Whether it&apos;s a team-building session, a company tournament, or a client networking day, we make it easy to mix sport, socialising, and down-time. With great food and drink options, flexible layouts, and an atmosphere that&apos;s always buzzing, Its Padel is the perfect place to bring people together."
-  },
-  "cta": {
-    "text": "Enquire Today",
-    "link": "#corporateform"
-  }
+	"hero": {
+		"headline": "Ready For Your Next Padel Event?",
+		"paragraph": "Where the rallies bring you in, but the people make you stay. Play, connect and feel part of something real",
+		"backgroundImage": "/itspade-eventshero.webp"
+	},
+	"description": {
+		"paragraph": "At Its Padel, we love events! Whether it&apos;s Christmas, birthdays, corporate, private, or going big with a full venue hire, we create bespoke experiences that are different."
+	},
+	"companies": [
+		"JMW",
+		"Kuits",
+		"LDC",
+		"Pretty",
+		"Together",
+		"TPA",
+		"New Balance",
+		"K3",
+		"EY",
+		"Match Room",
+		"City",
+		"Sky",
+		"MG",
+		"Capra",
+		"Carmex",
+		"Squire",
+		"Francis",
+		"Amazon",
+		"Sterling",
+		"Deloitte"
+	],
+	"whatMakesDifferent": {
+		"headline": "What makes our corporate events different",
+		"paragraph": "Here at Its Padel, our bespoke events give you the perfect opportunity to invite your colleagues and clients to experience the fastest growing sport in a unique and private setting, whatever the occasion."
+	},
+	"experience": {
+		"headline": "Experience the best Padel facilities in the UK",
+		"paragraph": "If you&apos;re planning a corporate event or private hire, Its Padel is built for it. Our clubs combine the best padel facilities in the UK with everything you need for a great day — showers, changing rooms, breakout spaces, and relaxed social areas. Whether it&apos;s a team-building session, a company tournament, or a client networking day, we make it easy to mix sport, socialising, and down-time. With great food and drink options, flexible layouts, and an atmosphere that&apos;s always buzzing, Its Padel is the perfect place to bring people together."
+	},
+	"cta": {
+		"text": "Enquire Today",
+		"link": "#corporateform"
+	}
 }

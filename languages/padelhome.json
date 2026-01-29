@@ -31,21 +31,21 @@
 			"paragraph": "Our expert coaches offer personalised training at all our clubs to help elevate your padel game to the next level!",
 			"ctaText": "Enquire Now",
 			"ctaLink": "/coaching",
-			"image": "/itspadel-model-shoot.webp"
+			"image": "/itspadel-coaching.webp"
 		},
 		{
 			"headline": "Join The Club",
 			"paragraph": "We operate social clubs where you can meet like-minded players, all with a common interest in this exhilarating sport.",
 			"ctaText": "Enquire Now",
 			"ctaLink": "/clubs",
-			"image": "/itspadel-footwear.webp"
+			"image": "/itspadel-jointheclub.webp"
 		},
 		{
 			"headline": "It's Coffee",
 			"paragraph": "Share a cup of coffee and a bite to eat with friends old and new in our welcoming café spaces.",
 			"ctaText": "Enquire Now",
 			"ctaLink": "/",
-			"image": "/itscoffee-main.webp"
+			"image": "/itspadel-itscoffee.webp"
 		}
 	]
 }

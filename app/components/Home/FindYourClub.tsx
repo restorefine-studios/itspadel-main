@@ -9,11 +9,11 @@ const FindYourClub = () => {
 	const clubs = [
 		{
 			name: "Glasgow",
-			image: "/locations/itspadel-mock-location-lightwater.webp",
+			image: "/locations/itspadel-glasgow.webp",
 		},
 		// { name: 'Birmingham', image: '/locations/itspadel-mock-location-birmingham.webp' },
-		// { name: 'Lightwater', image: '/locations/itspadel-mock-location-lightwater.webp' },
-		// { name: 'North Leeds', image: '/locations/itspadel-mock-location-lightwater.webp' },
+		// { name: 'Lightwater', image: '/locations/itspadel-glasgow.webp' },
+		// { name: 'North Leeds', image: '/locations/itspadel-glasgow.webp' },
 		// { name: 'Darlington', image: '/locations/itspadel-mock-location-nottingham.webp' }
 	];
 
