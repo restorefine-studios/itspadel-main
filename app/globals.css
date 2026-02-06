@@ -369,6 +369,44 @@ button:focus-visible {
 .animate-fade-in-4 { animation: fade-in-up 0.6s ease-out 0.8s forwards; opacity: 0; }
 .animate-fade-in-5 { animation: fade-in-up 0.6s ease-out 1.0s forwards; opacity: 0; }
 
+/* Mobile menu animations */
+@keyframes slideInLeft {
+  from {
+    opacity: 0;
+    transform: translateX(-20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+@keyframes slideOutLeft {
+  from {
+    opacity: 1;
+    transform: translateX(0);
+  }
+  to {
+    opacity: 0;
+    transform: translateX(-20px);
+  }
+}
+
+.mobile-menu-enter {
+  animation: slideInLeft 0.3s ease-out;
+}
+
+.mobile-menu-exit {
+  animation: slideOutLeft 0.3s ease-out;
+}
+
+/* Staggered animations for nav items */
+.nav-item-stagger-0 { animation-delay: 0s; }
+.nav-item-stagger-1 { animation-delay: 0.05s; }
+.nav-item-stagger-2 { animation-delay: 0.1s; }
+.nav-item-stagger-3 { animation-delay: 0.15s; }
+.nav-item-stagger-4 { animation-delay: 0.2s; }
+
 /* @import "tailwindcss";
 
 :root {
