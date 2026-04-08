@@ -1,4 +1,6 @@
-import Hero from '../components/Hero'
+import CoachingHero from '../components/Coaching/CoachingHero'
+import Overview from '../components/Coaching/Overview'
+import Academy from '../components/Coaching/Academy'
 import Clubs from '../components/Coaching/Clubs'
 import Playtomic from '../components/Coaching/Playtomic'
 import coachingData from '../../languages/padelcoaching.json'
@@ -6,10 +8,11 @@ import coachingData from '../../languages/padelcoaching.json'
 export default function Coaching () {
   return (
     <main>
-      <Hero
+      <CoachingHero
         image={coachingData.hero.backgroundImage}
-        headline={coachingData.hero.headline}
       />
+      <Overview data={coachingData.overview} />
+      <Academy data={coachingData.academy} />
       <Clubs />
       <Playtomic />
     </main>

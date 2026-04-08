@@ -3,6 +3,131 @@
 		"headline": "Its Padel Club Coaching",
 		"backgroundImage": "/itspadel-personal-coaching.webp"
 	},
+	"overview": {
+		"label": "Academy & Growth",
+		"headline": [
+			"LEARN,",
+			"IMPROVE,",
+			"AND PLAY",
+			"WITH",
+			"CONFIDENCE"
+		],
+		"paragraph1": "At Its Padel, our coaching programmes are designed to help players develop their skills, build confidence, and enjoy the excitement of padel. Whether you are stepping onto the court for the first time or looking to refine your competitive game, our experienced coaching team provides structured training in a welcoming environment.",
+		"paragraph2": "Our academy offers programmes for adults, juniors, and beginners, with sessions focused on technique, strategy, and match play. Every session is designed to help players improve step by step while enjoying the social and energetic nature of padel.",
+		"cta": "Explore Academy",
+		"image": "/itspadel-personal-coaching.webp",
+		"badgeTitle": "PRO GRADE",
+		"badgeSubtitle": "COACHING STANDARDS"
+	},
+	"academy": {
+		"introTitle": "Coaching Academy Available",
+		"introDesc": "We offer a range of coaching sessions to suit different playing levels and goals.",
+		"categories": [
+			{
+				"id": "adult",
+				"title": "Adult Coaching Academy",
+				"description": "Our adult coaching sessions are designed to support players at different skill levels, from beginners learning the basics to advanced players looking to improve their competitive performance.\nAll coaching programmes are delivered in blocks of 6 weeks, allowing players to progressively develop their skills.",
+				"days": [
+					{
+						"name": "MON",
+						"color": "#009FF3",
+						"sessions": [
+							{ "title": "COMPETE", "price": "£180", "subtitle": "Advanced (Grades 5–6)", "time": "6:30 PM", "duration": "90 mins" },
+							{ "title": "PERFORM", "price": "£180", "subtitle": "Intermediate / Advanced (Grades 3–4)", "time": "8:00 PM", "duration": "90 mins" }
+						]
+					},
+					{
+						"name": "TUE",
+						"color": "#94C11F",
+						"sessions": [
+							{ "title": "LADIES DISCOVER", "price": "£90", "subtitle": "Beginners", "time": "7:30 PM", "duration": "60 mins" },
+							{ "title": "LADIES PLAY", "price": "£90", "subtitle": "Beginners", "time": "8:30 PM", "duration": "60 mins" }
+						]
+					},
+					{
+						"name": "WED",
+						"color": "#FFFFFF",
+						"sessions": [
+							{ "title": "DISCOVER", "price": "£90", "subtitle": "Beginners", "time": "6:30 PM", "duration": "60 mins" }
+						]
+					},
+					{
+						"name": "FRI",
+						"color": "#555555",
+						"extra": "Blocks of 6",
+						"sessions": [
+							{ "title": "CARDIO PADEL", "price": "£60", "subtitle": "high energy fun", "time": "11:30 AM", "duration": "60 mins" },
+							{ "title": "COMPETE X PERFORM", "price": "£120", "subtitle": "advanced", "time": "1:00 PM", "duration": "60 mins" }
+						]
+					}
+				]
+			},
+			{
+				"id": "kids",
+				"title": "Kids Padel Academy",
+				"description": "Our Kids Padel Academy introduces young players to the sport through fun, structured coaching sessions that develop coordination, teamwork, and confidence.\nAll junior sessions are grouped by age and ability and run in 6-week blocks",
+				"days": [
+					{
+						"name": "TUE",
+						"color": "#94C11F",
+						"sessions": [
+							{ "title": "TOTS PADEL", "price": "£36", "subtitle": "Pre-School Age", "time": "2:00 PM", "duration": "45 mins" },
+							{ "title": "FOUNDATION", "price": "£60", "subtitle": "Primary 1–3", "time": "4:30 PM", "duration": "60 mins" },
+							{ "title": "DEVELOPMENT", "price": "£72", "subtitle": "Primary 4–7", "time": "5:30 PM", "duration": "60 mins" }
+						]
+					},
+					{
+						"name": "WED",
+						"color": "#009FF3",
+						"sessions": [
+							{ "title": "JUNIOR DEVELOPMENT", "price": "£84", "subtitle": "S1–S3", "time": "4:30 PM", "duration": "60 mins" },
+							{ "title": "JUNIOR TRANSITION", "price": "£90", "subtitle": "S4+", "time": "5:30 PM", "duration": "60 mins" }
+						]
+					}
+				]
+			},
+			{
+				"id": "mini",
+				"title": "Mini & Junior Academy",
+				"description": "Our Mini & Junior Academy provides flexible, affordable sessions for younger players to build strong fundamentals in a fun and energetic environment.\nSessions run throughout the week, including weekends, making it easy for families in East Kilbride and surrounding areas to access regular padel coaching",
+				"days": [
+					{
+						"name": "TUE",
+						"color": "#94C11F",
+						"sessions": [
+							{ "title": "TOTS PADEL", "price": "£6", "subtitle": "Pre-School Age", "time": "1:30 PM", "duration": "45 mins" },
+							{ "title": "FOUNDATION", "price": "£10", "subtitle": "Primary 1–3", "time": "4:30 PM", "duration": "60 mins" },
+							{ "title": "DEVELOPMENT", "price": "£10", "subtitle": "Primary 4–7", "time": "5:30 PM", "duration": "60 mins" }
+						]
+					},
+					{
+						"name": "WED",
+						"color": "#009FF3",
+						"sessions": [
+							{ "title": "JUNIOR DEVELOPMENT", "price": "£12", "subtitle": "S1–S3", "time": "4:30 PM", "duration": "60 mins" },
+							{ "title": "JUNIOR TRANSITION", "price": "£12", "subtitle": "S4–S6", "time": "5:30 PM", "duration": "60 mins" }
+						]
+					},
+					{
+						"name": "THU",
+						"color": "#FF9900",
+						"sessions": [
+							{ "title": "TOTS PADEL", "price": "£6", "subtitle": "Pre-School Age", "time": "1:30 PM", "duration": "45 mins" }
+						]
+					},
+					{
+						"name": "SUN",
+						"color": "#E63946",
+						"sessions": [
+							{ "title": "TOTS PADEL", "price": "£6", "subtitle": "Pre-School Age", "time": "9:30 AM", "duration": "45 mins" },
+							{ "title": "FOUNDATION", "price": "£10", "subtitle": "Primary 1–3", "time": "10:30 AM", "duration": "60 mins" },
+							{ "title": "DEVELOPMENT", "price": "£10", "subtitle": "Primary 4–7", "time": "11:30 AM", "duration": "60 mins" }
+						]
+					}
+				]
+			}
+		]
+	},
 	"clubs": [
 		{
 			"name": "Alderley Park",
