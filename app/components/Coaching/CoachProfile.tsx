@@ -124,8 +124,12 @@ const CoachProfile = ({ data }: CoachProfileProps) => {
             </div>
 
             {/* Description Paragraphs */}
-            <div className="space-y-4 text-gray-600 mt-12 hidden lg:block">
-              <p className="font-inter text-sm italic border-l-2 border-[#009FF3] pl-4">{currentCoach.description[0]}</p>
+            <div className="space-y-4 text-gray-700 mt-8">
+              {currentCoach.description.map((para, idx) => (
+                <p key={idx} className="font-inter text-base md:text-lg leading-relaxed">
+                  {para}
+                </p>
+              ))}
             </div>
           </div>
         </div>

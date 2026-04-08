@@ -1,0 +1,166 @@
+{
+  "hero": {
+    "subheading": "ELITE PERFORMANCE DIVISION",
+    "headline": ["ENGINEERED", "FOR THE", "ELITE"],
+    "buttons": [
+      {
+        "text": "SHOP PERFORMANCE",
+        "href": "#shop-catalog",
+        "type": "primary"
+      },
+      {
+        "text": "VIEW 2026 COLLECTION",
+        "href": "#2026-collection",
+        "type": "secondary"
+      }
+    ],
+    "backgroundImage": "/itpadel-padel-racket.webp",
+    "backgroundImageAlt": "Elite Performance Padel Equipment"
+  },
+  "gallery": {
+    "sectionLabel": "2026 COLLECTION",
+    "title": "AVAILABLE",
+    "titleHighlight": "RACKETS",
+    "viewAllText": "VIEW ALL",
+    "viewAllHref": "#view-all",
+    "products": [
+      {
+        "name": "Adidas Metalbone HRD+ 2026",
+        "price": "£320",
+        "image": "/itpadel-padel-racket.webp",
+        "category": "Premium",
+        "brand": "Adidas",
+        "description": "The ultimate power racket with hybrid core technology"
+      },
+      {
+        "name": "Adidas Metalbone Carbon CTRL 2026",
+        "price": "£250",
+        "image": "/itspadel-game-rackets.webp",
+        "category": "Control",
+        "brand": "Adidas",
+        "description": "Precision control with carbon fiber construction"
+      },
+      {
+        "name": "Adidas Metalbone Carbon",
+        "price": "£250",
+        "image": "/itspadel-rackets.webp",
+        "category": "All-Round",
+        "brand": "Adidas",
+        "description": "Balanced performance for versatile play"
+      },
+      {
+        "name": "Adidas Metalbone Pro",
+        "price": "£320",
+        "image": "/itpadel-padel-racket.webp",
+        "category": "Premium",
+        "brand": "Adidas",
+        "description": "Professional-grade performance racket"
+      },
+      {
+        "name": "NOX ML10",
+        "price": "£140",
+        "image": "/itspadel-game-rackets.webp",
+        "category": "Intermediate",
+        "brand": "NOX",
+        "description": "Perfect balance for developing players"
+      },
+      {
+        "name": "NOX AT10 12K",
+        "price": "£300",
+        "image": "/itspadel-rackets.webp",
+        "category": "Premium",
+        "brand": "NOX",
+        "description": "12K carbon fiber for maximum power"
+      },
+      {
+        "name": "Leyenda Invictus",
+        "price": "£110",
+        "image": "/itpadel-padel-racket.webp",
+        "category": "Entry",
+        "brand": "Leyenda",
+        "description": "Affordable quality for beginners"
+      },
+      {
+        "name": "Siux Astra Hybrid",
+        "price": "£100",
+        "image": "/itspadel-game-rackets.webp",
+        "category": "Entry",
+        "brand": "Siux",
+        "description": "Hybrid design for easy learning"
+      },
+      {
+        "name": "Nox Equation",
+        "price": "£120",
+        "image": "/itspadel-rackets.webp",
+        "category": "Intermediate",
+        "brand": "Nox",
+        "description": "Scientific design for consistent play"
+      }
+    ]
+  },
+  "accessories": {
+    "juniorProLab": {
+      "title": "JUNIOR PRO LAB",
+      "product": {
+        "name": "ADIDAS KIDS ARROW HIT",
+        "description": "Built for the next generation of court dominators. Lightweight, high-impact glass fiber construction.",
+        "price": "£60",
+        "buttonText": "GET EQUIPPED",
+        "image": "/proShop/kidsSection.png",
+        "imageAlt": "Junior Pro Lab Equipment",
+        "tag": "PERFORMANCE OPTIMIZED"
+      }
+    },
+    "technicalElements": {
+      "title": "TECHNICAL ELEMENTS",
+      "items": [
+        {
+          "name": "BULLPADEL BALLS",
+          "description": "Official tournament pressure.",
+          "price": "£6",
+          "image": "/locations/itspadel-glasgow.webp",
+          "buttonText": "ADD"
+        },
+        {
+          "name": "ADIDAS BALLS",
+          "description": "Extreme durability weave.",
+          "price": "£6.50",
+          "image": "/itspadel-homehero-bg.webp",
+          "buttonText": "ADD"
+        }
+      ],
+      "proOvergrips": {
+        "name": "PRO OVERGRIPS",
+        "description": "Maximum moisture absorption and tackiness for elite play.",
+        "features": ["SUPERIOR GRIP", "0.5MM THICKNESS"],
+        "buttonText": "QUICK BUY"
+      }
+    }
+  },
+  "hire": {
+    "headline": ["PRO HIRE", "PROGRAM"],
+    "price": "£4",
+    "frequency": "/ SESSION",
+    "description": "Don't settle for entry-level. Test the world's most advanced rackets in your next session. Our fleet features the latest models from Adidas and Bullpadel.",
+    "features": [
+      {
+        "title": "FRESH STOCK",
+        "description": "Rackets rotated every 30 days for peak performance."
+      },
+      {
+        "title": "HYGIENE LOCK",
+        "description": "New overgrips applied after every single hire."
+      }
+    ],
+    "series": [
+      {
+        "title": "ELITE SERIES",
+        "image": "/proShop/elite_series.png"
+      },
+      {
+        "title": "POWER SERIES",
+        "image": "/proShop/power_series.png"
+      }
+    ]
+  }
+}

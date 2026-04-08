@@ -15,6 +15,7 @@ const Navbar = () => {
 		{ name: "Coaching", path: "/coaching" },
 		{ name: "Events", path: "/events" },
 		{ name: "What is Padel", path: "/what-is-padel" },
+		{ name: "Pro Shop", path: "/pro-shop" },
 		{ name: "Clubs", path: "/clubs" },
 	];
 
