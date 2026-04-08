@@ -20,15 +20,15 @@
 a {
   font-weight: 500;
   text-decoration: inherit;
+  color: inherit;
 }
 a:hover {
-  color: #535bf2;
+  color: inherit;
 }
 
 p {
   color: gray;
   letter-spacing: -0.05em;
-
 }
 
 li {
@@ -60,73 +60,70 @@ button {
   transition: border-color 0.25s;
 }
 button:hover {
-  border-color: #646cff;
+  border-color: #009FF3;
 }
 button:focus,
 button:focus-visible {
   outline: 4px auto -webkit-focus-ring-color;
 }
 
-
 @media (prefers-color-scheme: light) {
-:root {
+  :root {
     color: #213547;
     background-color: #ffffff;
   }
   a:hover {
-    color: #747bff;
+    color: inherit;
   }
   button {
     background-color: #f9f9f9;
   }
 }
 
-
-
 @layer base {
-@font-face {
-  font-family: 'Inter';
-  src: url('/fonts/inter/Inter-Regular.woff2') format('woff2');
-  font-weight: 400;
-  font-display: swap;
-}
+  @font-face {
+    font-family: "Inter";
+    src: url("/fonts/inter/Inter-Regular.woff2") format("woff2");
+    font-weight: 400;
+    font-display: swap;
+  }
 
-@font-face {
-  font-family: 'Inter';
-  src: url('/fonts/inter/Inter-SemiBold.woff2') format('woff2');
-  font-weight: 600;
-  font-display: swap;
-}
+  @font-face {
+    font-family: "Inter";
+    src: url("/fonts/inter/Inter-SemiBold.woff2") format("woff2");
+    font-weight: 600;
+    font-display: swap;
+  }
 
-@font-face {
-  font-family: 'Inter';
-  src: url('/fonts/inter/Inter-Bold.woff2') format('woff2');
-  font-weight: 700;
-  font-display: swap;
-}
+  @font-face {
+    font-family: "Inter";
+    src: url("/fonts/inter/Inter-Bold.woff2") format("woff2");
+    font-weight: 700;
+    font-display: swap;
+  }
 
-@font-face {
-  font-family: 'Bison';
-  src: url('/fonts/bison/Bison-Regular.woff2') format('woff2');
-  font-weight: 400;
-  font-display: swap;
-}
+  @font-face {
+    font-family: "Bison";
+    src: url("/fonts/bison/Bison-Regular.woff2") format("woff2");
+    font-weight: 400;
+    font-display: swap;
+  }
 
-@font-face {
-  font-family: 'Bison';
-  src: url('/fonts/bison/Bison-Light.woff2') format('woff2');
-  font-weight: 300;
-  font-display: swap;
-}
+  @font-face {
+    font-family: "Bison";
+    src: url("/fonts/bison/Bison-Light.woff2") format("woff2");
+    font-weight: 300;
+    font-display: swap;
+  }
 
-@font-face {
-  font-family: 'Bison';
-  src: url('/fonts/bison/Bison-Bold.woff2') format('woff2');
-  font-weight: 700;
-  font-display: swap;
-}
+  @font-face {
+    font-family: "Bison";
+    src: url("/fonts/bison/Bison-Bold.woff2") format("woff2");
+    font-weight: 700;
+    font-display: swap;
+  }
 
-:root {
+  :root {
     --background: 0 0% 100%;
     --foreground: 0 0% 3.9%;
     --card: 0 0% 100%;
@@ -181,25 +178,21 @@ button:focus-visible {
   }
 }
 
-
-
 @layer base {
-  
   body {
     @apply bg-background text-foreground;
   }
   .font-bison {
-    font-family: 'Bison';
+    font-family: "Bison";
     font-weight: 700;
   }
   .font-headline {
-    font-family: 'Bison';
+    font-family: "Bison";
   }
   p {
     @apply tracking-tighter;
   }
 }
-
 
 #root {
   max-width: 1280px;
@@ -215,10 +208,10 @@ button:focus-visible {
   transition: filter 300ms;
 }
 .logo:hover {
-  filter: drop-shadow(0 0 2em #646cffaa);
+  filter: drop-shadow(0 0 2em #009FF3aa);
 }
 .logo.react:hover {
-  filter: drop-shadow(0 0 2em #61dafbaa);
+  filter: drop-shadow(0 0 2em #009FF3aa);
 }
 
 @keyframes logo-spin {
@@ -313,7 +306,9 @@ button:focus-visible {
 }
 
 .community-image-1.animate {
-  animation: popIn 0.5s ease-out, spreadOut1 1s ease-out 0.5s both;
+  animation:
+    popIn 0.5s ease-out,
+    spreadOut1 1s ease-out 0.5s both;
 }
 
 .community-image-2 {
@@ -323,7 +318,9 @@ button:focus-visible {
 }
 
 .community-image-2.animate {
-  animation: popIn 0.5s ease-out, spreadOut2 1s ease-out 0.6s both;
+  animation:
+    popIn 0.5s ease-out,
+    spreadOut2 1s ease-out 0.6s both;
 }
 
 .community-image-3 {
@@ -333,7 +330,9 @@ button:focus-visible {
 }
 
 .community-image-3.animate {
-  animation: popIn 0.5s ease-out, spreadOut3 1s ease-out 0.7s both;
+  animation:
+    popIn 0.5s ease-out,
+    spreadOut3 1s ease-out 0.7s both;
 }
 
 .community-image-4 {
@@ -343,7 +342,9 @@ button:focus-visible {
 }
 
 .community-image-4.animate {
-  animation: popIn 0.5s ease-out, spreadOut4 1s ease-out 0.8s both;
+  animation:
+    popIn 0.5s ease-out,
+    spreadOut4 1s ease-out 0.8s both;
 }
 
 .community-image-5 {
@@ -353,21 +354,46 @@ button:focus-visible {
 }
 
 .community-image-5.animate {
-  animation: popIn 0.5s ease-out, spreadOut5 1s ease-out 0.9s both;
+  animation:
+    popIn 0.5s ease-out,
+    spreadOut5 1s ease-out 0.9s both;
 }
-
 
 @keyframes fade-in-up {
-  from { opacity: 0; transform: translateY(30px); }
-  to { opacity: 1; transform: translateY(0); }
+  from {
+    opacity: 0;
+    transform: translateY(30px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
 }
 
-.animate-fade-in-0 { animation: fade-in-up 0.6s ease-out 0s forwards; opacity: 0; }
-.animate-fade-in-1 { animation: fade-in-up 0.6s ease-out 0.2s forwards; opacity: 0; }
-.animate-fade-in-2 { animation: fade-in-up 0.6s ease-out 0.4s forwards; opacity: 0; }
-.animate-fade-in-3 { animation: fade-in-up 0.6s ease-out 0.6s forwards; opacity: 0; }
-.animate-fade-in-4 { animation: fade-in-up 0.6s ease-out 0.8s forwards; opacity: 0; }
-.animate-fade-in-5 { animation: fade-in-up 0.6s ease-out 1.0s forwards; opacity: 0; }
+.animate-fade-in-0 {
+  animation: fade-in-up 0.6s ease-out 0s forwards;
+  opacity: 0;
+}
+.animate-fade-in-1 {
+  animation: fade-in-up 0.6s ease-out 0.2s forwards;
+  opacity: 0;
+}
+.animate-fade-in-2 {
+  animation: fade-in-up 0.6s ease-out 0.4s forwards;
+  opacity: 0;
+}
+.animate-fade-in-3 {
+  animation: fade-in-up 0.6s ease-out 0.6s forwards;
+  opacity: 0;
+}
+.animate-fade-in-4 {
+  animation: fade-in-up 0.6s ease-out 0.8s forwards;
+  opacity: 0;
+}
+.animate-fade-in-5 {
+  animation: fade-in-up 0.6s ease-out 1s forwards;
+  opacity: 0;
+}
 
 /* Mobile menu animations */
 @keyframes slideInLeft {
@@ -401,11 +427,21 @@ button:focus-visible {
 }
 
 /* Staggered animations for nav items */
-.nav-item-stagger-0 { animation-delay: 0s; }
-.nav-item-stagger-1 { animation-delay: 0.05s; }
-.nav-item-stagger-2 { animation-delay: 0.1s; }
-.nav-item-stagger-3 { animation-delay: 0.15s; }
-.nav-item-stagger-4 { animation-delay: 0.2s; }
+.nav-item-stagger-0 {
+  animation-delay: 0s;
+}
+.nav-item-stagger-1 {
+  animation-delay: 0.05s;
+}
+.nav-item-stagger-2 {
+  animation-delay: 0.1s;
+}
+.nav-item-stagger-3 {
+  animation-delay: 0.15s;
+}
+.nav-item-stagger-4 {
+  animation-delay: 0.2s;
+}
 
 /* @import "tailwindcss";
 
@@ -433,4 +469,3 @@ body {
   color: var(--foreground);
   font-family: Arial, Helvetica, sans-serif;
 } */
-

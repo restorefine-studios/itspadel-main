@@ -5,11 +5,7 @@
   },
   "overview": {
     "label": "Academy & Growth",
-    "headline": [
-      "LEARN, IMPROVE,",
-      "AND PLAY WITH",
-      "CONFIDENCE"
-    ],
+    "headline": ["LEARN, IMPROVE,", "AND PLAY WITH", "CONFIDENCE"],
     "paragraph1": "At Its Padel, our coaching programmes are designed to help players develop their skills, build confidence, and enjoy the excitement of padel. Whether you are stepping onto the court for the first time or looking to refine your competitive game, our experienced coaching team provides structured training in a welcoming environment.",
     "paragraph2": "Our academy offers programmes for adults, juniors, and beginners, with sessions focused on technique, strategy, and match play. Every session is designed to help players improve step by step while enjoying the social and energetic nature of padel.",
     "cta": "Explore Academy",
@@ -190,18 +186,6 @@
       "subtitle": "WEST END ARENA",
       "link": "https://playtomic.com/clubs/its-padel",
       "image": "/locations/itspadel-glasgow.webp"
-    },
-    {
-      "name": "LONDON",
-      "subtitle": "CANARY WHARF",
-      "link": "https://playtomic.com/clubs/its-padel",
-      "image": "/itspadel-homehero-bg.webp"
-    },
-    {
-      "name": "MANCHESTER",
-      "subtitle": "URBAN COURTS",
-      "link": "https://playtomic.com/clubs/its-padel",
-      "image": "/playtomic-cover-image.webp"
     }
   ],
   "playtomic": {

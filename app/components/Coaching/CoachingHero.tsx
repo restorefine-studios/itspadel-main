@@ -24,7 +24,7 @@ const CoachingHero = ({
 
           {/* Headline */}
           <h1 className="font-bison font-bold uppercase leading-[0.8] mb-10 animate-fade-in-1 flex flex-col items-start pl-4">
-            <span className="inline-block text-white text-[80px] sm:text-[120px] md:text-[160px] lg:text-[200px] tracking-tighter">
+            <span className="inline-block text-white text-[80px] sm:text-[120px] md:text-[160px] lg:text-[200px] tracking-tighter" style={{ transform: 'skewX(-18deg)' }}>
               PADEL COACHING
             </span>
             <span className="inline-block text-[#009FF3] text-[70px] sm:text-[100px] md:text-[140px] lg:text-[180px] tracking-tighter" style={{ transform: 'skewX(-18deg)' }}>
