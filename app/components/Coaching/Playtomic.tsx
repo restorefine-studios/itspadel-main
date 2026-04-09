@@ -78,7 +78,7 @@ const Playtomic = ({ theme = "dark" }: PlaytomicProps) => {
           </div>
 
           {/* Overlapping Playtomic Badge */}
-          <div className="absolute bottom-10 left-10 lg:bottom-20 lg:left-32 z-20 bg-[#111] border border-[#009FF3] py-8 px-12 md:px-16 flex flex-col items-center justify-center shadow-2xl backdrop-blur-sm" style={{ transform: "skewX(-15deg)" }}>
+          <div className="absolute bottom-10 left-10 lg:bottom-20 lg:left-52 z-20 bg-[#111] border border-[#009FF3] py-8 px-12 md:px-16 flex flex-col items-center justify-center shadow-2xl backdrop-blur-sm" style={{ transform: "skewX(-15deg)" }}>
             {/* Using text for PLAYTOMIC since custom font matches well, or the user's logo SVG */}
             <h3 className="font-bison font-black text-white text-4xl md:text-5xl lg:text-6xl tracking-widest uppercase mb-2">PLAYTOMIC</h3>
             <p className="font-inter font-bold text-[#009FF3] text-[8px] md:text-[10px] tracking-[0.3em] uppercase">Official Booking Partner</p>
