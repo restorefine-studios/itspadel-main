@@ -35,7 +35,7 @@ const Reviews = () => {
           <div className="lg:col-span-3 flex lg:flex-col items-end lg:items-start justify-between lg:justify-start gap-8 lg:gap-10">
             {/* Giant quote mark */}
             <span className="font-bison text-[100px] md:text-[140px] leading-none text-[#009FF3] select-none opacity-50" style={{ transform: "skewX(-15deg)" }}>
-              "
+              &ldquo;
             </span>
 
             {/* Reviewer identity — replaces photo */}
