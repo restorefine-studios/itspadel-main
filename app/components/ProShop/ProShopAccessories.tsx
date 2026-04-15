@@ -109,8 +109,8 @@ const ProShopAccessories = ({ data }: ProShopAccessoriesProps) => {
             {/* Technical Items Cards */}
             {technicalElements.items.map((item, index) => (
               <div key={index} className="bg-[#f4f4f4] p-8 md:p-12 flex flex-col justify-between hover:bg-[#eaeaea] transition-colors group border border-transparent hover:border-gray-300">
-                <div className="w-full h-[250px] relative mb-12 flex items-center justify-center mix-blend-multiply overflow-hidden">
-                  <Image src={item.image} alt={item.name} fill className="object-cover transform group-hover:scale-105 transition-transform duration-500 grayscale opacity-40 mix-blend-multiply" />
+                <div className="w-full h-[250px] relative mb-12 flex items-center justify-center overflow-hidden">
+                  <Image src={item.image} alt={item.name} fill className="object-contain transform group-hover:scale-105 transition-all duration-500 [filter:grayscale(70%)_brightness(0.9)] group-hover:[filter:grayscale(0%)_brightness(1)]" />
                 </div>
                 <div className="flex flex-col w-full z-10">
                   <h3 className="font-bison font-black text-[#151515] text-2xl md:text-3xl uppercase mb-1">{item.name}</h3>

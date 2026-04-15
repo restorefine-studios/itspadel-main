@@ -65,11 +65,11 @@ const ProShopGallery = ({ data }: ProShopGalleryProps) => {
               {/* Image Container */}
               <div className="relative w-full h-[300px] mb-8 overflow-hidden flex items-center justify-center">
                 {/* Fallback image manipulation to make it look like a product shoot */}
-                <Image 
-                  src={product.image} 
-                  alt={product.name} 
-                  fill 
-                  className="object-contain transform group-hover:scale-110 transition-transform duration-700 grayscale contrast-125 brightness-110 drop-shadow-2xl" 
+                <Image
+                  src={product.image}
+                  alt={product.name}
+                  fill
+                  className="object-contain transform group-hover:scale-110 drop-shadow-2xl transition-all duration-700 [filter:grayscale(70%)_brightness(0.85)] group-hover:[filter:grayscale(0%)_brightness(1)]"
                 />
               </div>
 
