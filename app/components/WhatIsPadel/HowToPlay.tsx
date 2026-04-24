@@ -51,13 +51,17 @@ const HowToPlay = () => {
         </div>      
       </div>
         <div className="grid grid-cols-1 md:grid-cols-2 gap-8 p-8 animate-fade-in-2">
-          <Image
-            src={tabs[activeTab].image}
-            alt={tabs[activeTab].title}
-            width={400}
-            height={500}
-            className="w-full h-[450px] object-cover rounded-3xl"
-          />
+          {tabs[activeTab].image ? (
+            <Image
+              src={tabs[activeTab].image}
+              alt={tabs[activeTab].title}
+              width={400}
+              height={500}
+              className="w-full h-[450px] object-cover rounded-3xl"
+            />
+          ) : (
+            <div className="w-full h-[450px] rounded-3xl bg-[#EEEDED]" />
+          )}
           <div>
             {(() => {
               const tab = tabs[activeTab]

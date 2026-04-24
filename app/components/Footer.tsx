@@ -1,11 +1,35 @@
 "use client";
 
+import { useState } from "react";
 import { Instagram, ArrowRight } from "lucide-react";
 import Image from "next/image";
 import Link from "next/link";
 
 const Footer = () => {
   const currentYear = new Date().getFullYear();
+  const [email, setEmail] = useState("");
+  const [status, setStatus] = useState<"idle" | "loading" | "success" | "error">("idle");
+
+  const handleSubscribe = async () => {
+    if (!email || !/^\S+@\S+\.\S+$/.test(email)) return;
+    setStatus("loading");
+    try {
+      const res = await fetch("/api/newsletter", {
+        method: "POST",
+        headers: { "Content-Type": "application/json" },
+        body: JSON.stringify({ email }),
+      });
+      const json = await res.json();
+      if (json.success) {
+        setStatus("success");
+        setEmail("");
+      } else {
+        setStatus("error");
+      }
+    } catch {
+      setStatus("error");
+    }
+  };
 
   return (
     <footer className="relative bg-[#050505] pt-24 pb-8 overflow-hidden text-white font-inter">
@@ -64,16 +88,34 @@ const Footer = () => {
             <p className="font-inter text-gray-400 text-sm md:text-base font-medium max-w-sm mb-8">
               Stay up to date with the latest news, coaching tips, and exclusive arena offers by joining our awesome newsletter.
             </p>
-            <div className="relative max-w-md">
-              <input
-                type="email"
-                placeholder="ENTER YOUR EMAIL"
-                className="w-full px-4 py-4 bg-[#111] border border-gray-800 text-white font-bison italic tracking-widest uppercase text-xl placeholder-gray-600 focus:outline-none focus:border-[#009FF3] transition-colors"
-              />
-              <button className="absolute right-0 top-0 h-full px-6 bg-[#009FF3] hover:bg-[#0080cc] transition-colors flex items-center justify-center text-white">
-                <ArrowRight className="w-6 h-6" />
-              </button>
-            </div>
+            {status === "success" ? (
+              <p className="font-inter text-sm text-[#009FF3] font-medium">
+                You&apos;re subscribed — check your inbox!
+              </p>
+            ) : (
+              <>
+                <div className="relative max-w-md">
+                  <input
+                    type="email"
+                    value={email}
+                    onChange={(e) => { setEmail(e.target.value); setStatus("idle"); }}
+                    onKeyDown={(e) => e.key === "Enter" && handleSubscribe()}
+                    placeholder="ENTER YOUR EMAIL"
+                    className="w-full px-4 py-4 bg-[#111] border border-gray-800 text-white font-bison italic tracking-widest uppercase text-xl placeholder-gray-600 focus:outline-none focus:border-[#009FF3] transition-colors"
+                  />
+                  <button
+                    onClick={handleSubscribe}
+                    disabled={status === "loading"}
+                    className="absolute right-0 top-0 h-full px-6 bg-[#009FF3] hover:bg-[#0080cc] transition-colors flex items-center justify-center text-white disabled:opacity-60"
+                  >
+                    <ArrowRight className="w-6 h-6" />
+                  </button>
+                </div>
+                {status === "error" && (
+                  <p className="mt-2 font-inter text-xs text-red-400">Something went wrong. Please try again.</p>
+                )}
+              </>
+            )}
           </div>
 
           {/* Links (Span 7) */}

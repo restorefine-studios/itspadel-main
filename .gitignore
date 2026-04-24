@@ -40,6 +40,9 @@ yarn-error.log*
 *.tsbuildinfo
 next-env.d.ts
 
+# enquiries data
+/data/enquiries.xlsx
+
 # macOS metadata files
 ._*
 .DS_Store

@@ -15,23 +15,38 @@ const jetbrainsMono = JetBrains_Mono({
 });
 
 export const metadata: Metadata = {
-  title: "itspadel | Your game starts here",
-  description: "itspadel is a modern padel club in East Kilbride offering premium padel courts, competitive play, and a vibrant padel community. Your game starts here.",
+  title: {
+    default: "itspadel | Indoor Padel Courts in East Kilbride, Scotland",
+    template: "%s | itspadel",
+  },
+  description: "itspadel is Scotland's premier indoor padel club in East Kilbride. Book courts, join coaching sessions, shop padel equipment, and be part of the UK's fastest growing racket sport community.",
   icons: {
     icon: "/itspadel-favicon.ico",
   },
-  keywords: ["padel East Kilbride", "padel courts East Kilbride", "padel club Scotland", "play padel", "padel community", "competitive padel", "itspadel"],
+  keywords: [
+    "padel East Kilbride",
+    "padel courts East Kilbride",
+    "padel club Scotland",
+    "indoor padel UK",
+    "padel community Scotland",
+    "competitive padel",
+    "itspadel",
+    "padel near me",
+    "padel Glasgow",
+    "padel racket sport UK",
+  ],
+  metadataBase: new URL("https://www.itspadel.co.uk"),
   openGraph: {
-    title: "itspadel | Your game starts here",
-    description: "Experience padel at itspadel — premium courts, competitive growth, and a connected community in East Kilbride.",
-    url: "https://itspadel.co.uk",
+    title: "itspadel | Indoor Padel Courts in East Kilbride, Scotland",
+    description: "Scotland's premier indoor padel club — premium courts, expert coaching, pro shop, and a connected community in East Kilbride.",
+    url: "https://www.itspadel.co.uk",
     siteName: "itspadel",
     images: [
       {
-        url: "/itspadel-logo-alt.svg",
+        url: "/og-image.jpg",
         width: 1200,
         height: 630,
-        alt: "itspadel – Padel courts and community",
+        alt: "itspadel – Indoor Padel Courts in East Kilbride",
       },
     ],
     locale: "en_GB",
@@ -39,12 +54,23 @@ export const metadata: Metadata = {
   },
   twitter: {
     card: "summary_large_image",
-    title: "itspadel | Your game starts here",
-    description: "Premium padel experience, community, and competitive growth in East Kilbride.",
-    images: ["/itspadel-logo-alt.svg"],
+    title: "itspadel | Indoor Padel Courts in East Kilbride, Scotland",
+    description: "Scotland's premier indoor padel club — premium courts, expert coaching, and a vibrant community in East Kilbride.",
+    images: ["/og-image.jpg"],
   },
   alternates: {
-    canonical: "https://itspadel.co.uk",
+    canonical: "https://www.itspadel.co.uk",
+  },
+  robots: {
+    index: true,
+    follow: true,
+    googleBot: {
+      index: true,
+      follow: true,
+      "max-video-preview": -1,
+      "max-image-preview": "large",
+      "max-snippet": -1,
+    },
   },
 };
 
@@ -54,7 +80,7 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="en">
+    <html lang="en-GB">
       <body className={`${interSans.variable} ${jetbrainsMono.variable} antialiased`}>
         <Navbar />
         <main className="flex-grow">{children}</main>

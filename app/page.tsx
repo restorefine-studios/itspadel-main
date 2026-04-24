@@ -10,8 +10,32 @@ import homeData from "../languages/padelhome.json";
 import { Metadata } from "next";
 
 export const metadata: Metadata = {
-  title: "Its Padel - Indoor Padel Court",
-  description: "Providing competitive padel sporting, immersive community, and a vibrant padel experience all over UK",
+  title: "itspadel | Indoor Padel Courts in East Kilbride, Scotland",
+  description: "Play padel at itspadel — premium indoor padel courts in East Kilbride. Book a court, join a thriving community, and experience the UK's fastest growing racket sport.",
+  keywords: [
+    "padel East Kilbride",
+    "indoor padel courts Scotland",
+    "padel club UK",
+    "book padel court",
+    "padel community Scotland",
+    "padel sport UK",
+    "itspadel",
+    "padel near me",
+    "padel court hire",
+    "padel Glasgow",
+  ],
+  alternates: {
+    canonical: "https://www.itspadel.co.uk",
+  },
+  openGraph: {
+    title: "itspadel | Indoor Padel Courts in East Kilbride, Scotland",
+    description: "Play padel at itspadel — premium indoor padel courts in East Kilbride. Book a court and experience the UK's fastest growing racket sport.",
+    url: "https://www.itspadel.co.uk",
+  },
+  twitter: {
+    title: "itspadel | Indoor Padel Courts in East Kilbride, Scotland",
+    description: "Play padel at itspadel — premium indoor padel courts in East Kilbride. Book a court and experience the UK's fastest growing racket sport.",
+  },
 };
 
 export default function Home() {
