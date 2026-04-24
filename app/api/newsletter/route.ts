@@ -257,7 +257,7 @@ export async function POST(request: Request) {
       subject: `New subscriber – ${email}`,
       html: adminHtml,
       attachments: [
-        { filename: "newsletter.xlsx", content: newsletterBase64 },
+        ...(newsletterBase64 ? [{ filename: "newsletter.xlsx", content: newsletterBase64 }] : []),
         ...(enquiriesBase64 ? [{ filename: "enquiries.xlsx", content: enquiriesBase64 }] : []),
       ],
     }).catch((err) => console.error("Admin notification error:", err));
