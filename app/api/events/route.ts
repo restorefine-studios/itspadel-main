@@ -240,7 +240,7 @@ export async function POST(request: Request) {
       subject: `Event Enquiry – ${firstname} ${lastname} · ${guests} guests · ${formattedDate}`,
       html,
       attachments: [
-        { filename: "enquiries.xlsx", content: enquiriesBase64 },
+        ...(enquiriesBase64 ? [{ filename: "enquiries.xlsx", content: enquiriesBase64 }] : []),
         ...(newsletterBase64 ? [{ filename: "newsletter.xlsx", content: newsletterBase64 }] : []),
       ],
     });
