@@ -1,6 +1,6 @@
 "use client";
 
-import { useState, useEffect } from "react";
+import { useState } from "react";
 import { useSearchParams } from "next/navigation";
 import Link from "next/link";
 import { Suspense } from "react";
@@ -8,11 +8,9 @@ import { Suspense } from "react";
 function UnsubscribeContent() {
   const searchParams = useSearchParams();
   const token = searchParams.get("token");
-  const [status, setStatus] = useState<"idle" | "loading" | "success" | "error" | "invalid">("idle");
-
-  useEffect(() => {
-    if (!token) setStatus("invalid");
-  }, [token]);
+  const [status, setStatus] = useState<"idle" | "loading" | "success" | "error" | "invalid">(
+    token ? "idle" : "invalid"
+  );
 
   const handleUnsubscribe = async () => {
     if (!token) return;
