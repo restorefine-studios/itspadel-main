@@ -36,37 +36,35 @@ export async function POST(request: Request) {
 
     const clubLabel = club === "eastkilbride" ? "East Kilbride" : club;
 
-    // --- Excel: append enquiry and attach as buffer ---
-    const EXCEL_PATH = path.join(process.cwd(), "data", "enquiries.xlsx");
+    // --- Excel: build enquiries sheet and attach ---
+    const EXCEL_PATH = "/tmp/enquiries.xlsx";
+    const NEWSLETTER_PATH = "/tmp/newsletter.xlsx";
     const HEADERS = ["First Name", "Last Name", "Email", "Phone"];
 
-    let workbook: XLSX.WorkBook;
+    let enquiriesBase64: string | null = null;
+    let newsletterBase64: string | null = null;
+
     try {
-      const fileBuffer = fs.readFileSync(EXCEL_PATH);
-      workbook = XLSX.read(fileBuffer, { type: "buffer" });
-    } catch {
-      workbook = XLSX.utils.book_new();
-      const emptySheet = XLSX.utils.aoa_to_sheet([HEADERS]);
-      XLSX.utils.book_append_sheet(workbook, emptySheet, "Enquiries");
+      let workbook: XLSX.WorkBook;
+      try {
+        workbook = XLSX.read(fs.readFileSync(EXCEL_PATH), { type: "buffer" });
+      } catch {
+        workbook = XLSX.utils.book_new();
+        XLSX.utils.book_append_sheet(workbook, XLSX.utils.aoa_to_sheet([HEADERS]), "Enquiries");
+      }
+
+      XLSX.utils.sheet_add_aoa(workbook.Sheets["Enquiries"], [[firstname, lastname, email, phone]], { origin: -1 });
+
+      const buf: Buffer = XLSX.write(workbook, { type: "buffer", bookType: "xlsx" });
+      fs.writeFileSync(EXCEL_PATH, buf);
+      enquiriesBase64 = buf.toString("base64");
+    } catch (e) {
+      console.error("Excel (enquiries) error:", e);
     }
 
-    const ws = workbook.Sheets["Enquiries"];
-    XLSX.utils.sheet_add_aoa(ws, [[firstname, lastname, email, phone]], { origin: -1 });
-
-    const excelBuffer: Buffer = XLSX.write(workbook, { type: "buffer", bookType: "xlsx" });
-
-    // Persist to disk (ensure directory exists)
-    fs.mkdirSync(path.dirname(EXCEL_PATH), { recursive: true });
-    fs.writeFileSync(EXCEL_PATH, excelBuffer);
-
-    const enquiriesBase64 = excelBuffer.toString("base64");
-
-    // Also attach newsletter.xlsx if it exists
-    const NEWSLETTER_PATH = path.join(process.cwd(), "data", "newsletter.xlsx");
-    let newsletterBase64: string | null = null;
     try {
       newsletterBase64 = fs.readFileSync(NEWSLETTER_PATH).toString("base64");
-    } catch { /* file doesn't exist yet, skip */ }
+    } catch { /* newsletter file doesn't exist yet */ }
 
     const html = `
 <!DOCTYPE html>

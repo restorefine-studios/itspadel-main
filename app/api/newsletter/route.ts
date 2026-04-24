@@ -26,38 +26,39 @@ export async function POST(request: Request) {
       );
     }
 
-    // --- Excel: append subscriber email ---
-    const EXCEL_PATH = path.join(process.cwd(), "data", "newsletter.xlsx");
+    // --- Excel: build newsletter sheet and attach ---
+    const EXCEL_PATH = "/tmp/newsletter.xlsx";
+    const ENQUIRIES_PATH = "/tmp/enquiries.xlsx";
     const HEADERS = ["Email", "Subscribed At"];
 
-    let workbook: XLSX.WorkBook;
+    let newsletterBase64: string | null = null;
+    let enquiriesBase64: string | null = null;
+
     try {
-      const fileBuffer = fs.readFileSync(EXCEL_PATH);
-      workbook = XLSX.read(fileBuffer, { type: "buffer" });
-    } catch {
-      workbook = XLSX.utils.book_new();
-      const emptySheet = XLSX.utils.aoa_to_sheet([HEADERS]);
-      XLSX.utils.book_append_sheet(workbook, emptySheet, "Subscribers");
+      let workbook: XLSX.WorkBook;
+      try {
+        workbook = XLSX.read(fs.readFileSync(EXCEL_PATH), { type: "buffer" });
+      } catch {
+        workbook = XLSX.utils.book_new();
+        XLSX.utils.book_append_sheet(workbook, XLSX.utils.aoa_to_sheet([HEADERS]), "Subscribers");
+      }
+
+      XLSX.utils.sheet_add_aoa(
+        workbook.Sheets["Subscribers"],
+        [[email, new Date().toLocaleString("en-GB")]],
+        { origin: -1 }
+      );
+
+      const buf: Buffer = XLSX.write(workbook, { type: "buffer", bookType: "xlsx" });
+      fs.writeFileSync(EXCEL_PATH, buf);
+      newsletterBase64 = buf.toString("base64");
+    } catch (e) {
+      console.error("Excel (newsletter) error:", e);
     }
 
-    const ws = workbook.Sheets["Subscribers"];
-    XLSX.utils.sheet_add_aoa(
-      ws,
-      [[email, new Date().toLocaleString("en-GB")]],
-      { origin: -1 }
-    );
-
-    const excelBuffer: Buffer = XLSX.write(workbook, { type: "buffer", bookType: "xlsx" });
-    fs.mkdirSync(path.dirname(EXCEL_PATH), { recursive: true });
-    fs.writeFileSync(EXCEL_PATH, excelBuffer);
-    const newsletterBase64 = excelBuffer.toString("base64");
-
-    // Also attach enquiries.xlsx if it exists
-    const ENQUIRIES_PATH = path.join(process.cwd(), "data", "enquiries.xlsx");
-    let enquiriesBase64: string | null = null;
     try {
       enquiriesBase64 = fs.readFileSync(ENQUIRIES_PATH).toString("base64");
-    } catch { /* file doesn't exist yet, skip */ }
+    } catch { /* enquiries file doesn't exist yet */ }
 
     const unsubscribeToken = Buffer.from(email).toString("base64url");
     const unsubscribeUrl = `https://www.itspadel.co.uk/unsubscribe?token=${unsubscribeToken}`;

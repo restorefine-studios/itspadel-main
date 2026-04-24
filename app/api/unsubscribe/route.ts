@@ -17,7 +17,7 @@ export async function POST(request: Request) {
       return NextResponse.json({ success: false, error: "Invalid token." }, { status: 400 });
     }
 
-    const EXCEL_PATH = path.join(process.cwd(), "data", "newsletter.xlsx");
+    const EXCEL_PATH = "/tmp/newsletter.xlsx";
 
     let workbook: XLSX.WorkBook;
     try {
