@@ -1,8 +1,7 @@
 import { NextResponse } from "next/server";
 import { Resend } from "resend";
 import * as XLSX from "xlsx";
-import fs from "fs";
-import path from "path";
+import { put, head } from "@vercel/blob";
 
 const resend = process.env.RESEND_API_KEY
   ? new Resend(process.env.RESEND_API_KEY)
@@ -26,18 +25,17 @@ export async function POST(request: Request) {
       );
     }
 
-    // --- Excel: build newsletter sheet and attach ---
-    const EXCEL_PATH = "/tmp/newsletter.xlsx";
-    const ENQUIRIES_PATH = "/tmp/enquiries.xlsx";
+    // --- Excel: build newsletter sheet and persist to Blob ---
     const HEADERS = ["Email", "Subscribed At"];
-
     let newsletterBase64: string | null = null;
     let enquiriesBase64: string | null = null;
 
     try {
       let workbook: XLSX.WorkBook;
       try {
-        workbook = XLSX.read(fs.readFileSync(EXCEL_PATH), { type: "buffer" });
+        const existing = await head("newsletter.xlsx");
+        const res = await fetch(existing.url);
+        workbook = XLSX.read(Buffer.from(await res.arrayBuffer()), { type: "buffer" });
       } catch {
         workbook = XLSX.utils.book_new();
         XLSX.utils.book_append_sheet(workbook, XLSX.utils.aoa_to_sheet([HEADERS]), "Subscribers");
@@ -50,14 +48,16 @@ export async function POST(request: Request) {
       );
 
       const buf: Buffer = XLSX.write(workbook, { type: "buffer", bookType: "xlsx" });
-      fs.writeFileSync(EXCEL_PATH, buf);
+      await put("newsletter.xlsx", buf, { access: "public", addRandomSuffix: false });
       newsletterBase64 = buf.toString("base64");
     } catch (e) {
       console.error("Excel (newsletter) error:", e);
     }
 
     try {
-      enquiriesBase64 = fs.readFileSync(ENQUIRIES_PATH).toString("base64");
+      const existing = await head("enquiries.xlsx");
+      const res = await fetch(existing.url);
+      enquiriesBase64 = Buffer.from(await res.arrayBuffer()).toString("base64");
     } catch { /* enquiries file doesn't exist yet */ }
 
     const unsubscribeToken = Buffer.from(email).toString("base64url");

@@ -1,7 +1,6 @@
 import { NextResponse } from "next/server";
 import * as XLSX from "xlsx";
-import fs from "fs";
-import path from "path";
+import { put, head } from "@vercel/blob";
 
 export async function POST(request: Request) {
   try {
@@ -17,31 +16,26 @@ export async function POST(request: Request) {
       return NextResponse.json({ success: false, error: "Invalid token." }, { status: 400 });
     }
 
-    const EXCEL_PATH = "/tmp/newsletter.xlsx";
-
     let workbook: XLSX.WorkBook;
     try {
-      const fileBuffer = fs.readFileSync(EXCEL_PATH);
-      workbook = XLSX.read(fileBuffer, { type: "buffer" });
+      const existing = await head("newsletter.xlsx");
+      const res = await fetch(existing.url);
+      workbook = XLSX.read(Buffer.from(await res.arrayBuffer()), { type: "buffer" });
     } catch {
       return NextResponse.json({ success: false, error: "Not subscribed." }, { status: 404 });
     }
 
     const ws = workbook.Sheets["Subscribers"];
     const rows: string[][] = XLSX.utils.sheet_to_json(ws, { header: 1 });
-
-    const header = rows[0];
     const filtered = rows.filter((row, i) => i === 0 || row[0] !== email);
 
     if (filtered.length === rows.length) {
       return NextResponse.json({ success: false, error: "Email not found." }, { status: 404 });
     }
 
-    const newWs = XLSX.utils.aoa_to_sheet(filtered);
-    workbook.Sheets["Subscribers"] = newWs;
-
-    const excelBuffer: Buffer = XLSX.write(workbook, { type: "buffer", bookType: "xlsx" });
-    fs.writeFileSync(EXCEL_PATH, excelBuffer);
+    workbook.Sheets["Subscribers"] = XLSX.utils.aoa_to_sheet(filtered);
+    const buf: Buffer = XLSX.write(workbook, { type: "buffer", bookType: "xlsx" });
+    await put("newsletter.xlsx", buf, { access: "public", addRandomSuffix: false });
 
     return NextResponse.json({ success: true });
   } catch (error) {

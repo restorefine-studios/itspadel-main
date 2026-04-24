@@ -1,8 +1,7 @@
 import { NextResponse } from "next/server";
 import { Resend } from "resend";
 import * as XLSX from "xlsx";
-import fs from "fs";
-import path from "path";
+import { put, head } from "@vercel/blob";
 
 const resend = process.env.RESEND_API_KEY
   ? new Resend(process.env.RESEND_API_KEY)
@@ -36,18 +35,17 @@ export async function POST(request: Request) {
 
     const clubLabel = club === "eastkilbride" ? "East Kilbride" : club;
 
-    // --- Excel: build enquiries sheet and attach ---
-    const EXCEL_PATH = "/tmp/enquiries.xlsx";
-    const NEWSLETTER_PATH = "/tmp/newsletter.xlsx";
+    // --- Excel: build enquiries sheet and persist to Blob ---
     const HEADERS = ["First Name", "Last Name", "Email", "Phone"];
-
     let enquiriesBase64: string | null = null;
     let newsletterBase64: string | null = null;
 
     try {
       let workbook: XLSX.WorkBook;
       try {
-        workbook = XLSX.read(fs.readFileSync(EXCEL_PATH), { type: "buffer" });
+        const existing = await head("enquiries.xlsx");
+        const res = await fetch(existing.url);
+        workbook = XLSX.read(Buffer.from(await res.arrayBuffer()), { type: "buffer" });
       } catch {
         workbook = XLSX.utils.book_new();
         XLSX.utils.book_append_sheet(workbook, XLSX.utils.aoa_to_sheet([HEADERS]), "Enquiries");
@@ -56,14 +54,16 @@ export async function POST(request: Request) {
       XLSX.utils.sheet_add_aoa(workbook.Sheets["Enquiries"], [[firstname, lastname, email, phone]], { origin: -1 });
 
       const buf: Buffer = XLSX.write(workbook, { type: "buffer", bookType: "xlsx" });
-      fs.writeFileSync(EXCEL_PATH, buf);
+      await put("enquiries.xlsx", buf, { access: "public", addRandomSuffix: false });
       enquiriesBase64 = buf.toString("base64");
     } catch (e) {
       console.error("Excel (enquiries) error:", e);
     }
 
     try {
-      newsletterBase64 = fs.readFileSync(NEWSLETTER_PATH).toString("base64");
+      const existing = await head("newsletter.xlsx");
+      const res = await fetch(existing.url);
+      newsletterBase64 = Buffer.from(await res.arrayBuffer()).toString("base64");
     } catch { /* newsletter file doesn't exist yet */ }
 
     const html = `
