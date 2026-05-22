@@ -42,8 +42,8 @@ export default function ProShopPage() {
       <Navbar />
       <ProShopHero data={proShopData.hero} />
       <ProShopGallery data={proShopData.gallery} />
-      <ProShopAccessories data={proShopData.accessories} />
       <ProShopHire data={proShopData.hire} />
+      <ProShopAccessories data={proShopData.accessories} />
       {/* <Footer /> */}
     </main>
   );

@@ -105,18 +105,24 @@ const ProShopAccessories = ({ data }: ProShopAccessoriesProps) => {
           </div>
 
           {/* Elements Grid */}
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 md:gap-12 w-full">
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4 md:gap-12 w-full">
             {/* Technical Items Cards */}
             {technicalElements.items.map((item, index) => (
-              <div key={index} className="bg-[#f4f4f4] p-8 md:p-12 flex flex-col justify-between hover:bg-[#eaeaea] transition-colors group border border-transparent hover:border-gray-300">
-                <div className="w-full h-[250px] relative mb-12 flex items-center justify-center overflow-hidden">
-                  <Image src={item.image} alt={item.name} fill className="object-contain transform group-hover:scale-105 transition-all duration-500 [filter:grayscale(70%)_brightness(0.9)] group-hover:[filter:grayscale(0%)_brightness(1)]" />
+              <div key={index} className="bg-[#f4f4f4] hover:bg-[#eaeaea] transition-colors group border border-transparent hover:border-gray-300
+                flex flex-row items-center gap-0 p-0
+                md:flex-col md:justify-between md:p-12">
+
+                {/* Image — left on mobile, top on desktop */}
+                <div className="relative shrink-0 w-[160px] h-[160px] md:w-full md:h-[250px] md:mb-12 flex items-center justify-center overflow-hidden">
+                  <Image src={item.image} alt={item.name} fill className="object-contain transform group-hover:scale-105 transition-all duration-500 [filter:none] md:[filter:grayscale(70%)_brightness(0.9)] md:group-hover:[filter:grayscale(0%)_brightness(1)]" />
                 </div>
-                <div className="flex flex-col w-full z-10">
+
+                {/* Text — right on mobile, bottom on desktop */}
+                <div className="flex flex-col flex-1 px-5 py-5 md:px-0 md:py-0 w-full z-10">
                   <h3 className="font-bison font-black text-[#151515] text-2xl md:text-3xl uppercase mb-1">{item.name}</h3>
-                  <p className="font-inter text-gray-500 text-sm font-medium mb-6">{item.description}</p>
-                  <div className="flex items-center justify-between w-full border-t border-gray-300 pt-6">
-                    <span className="font-bison font-bold text-[#009FF3] text-4xl">{item.price}</span>
+                  <p className="font-inter text-gray-500 text-sm md:text-sm font-medium mb-4 md:mb-6">{item.description}</p>
+                  <div className="flex items-center w-full border-t border-gray-300 pt-4 md:pt-6">
+                    <span className="font-bison font-bold text-[#009FF3] text-3xl md:text-4xl">{item.price}</span>
                   </div>
                 </div>
               </div>

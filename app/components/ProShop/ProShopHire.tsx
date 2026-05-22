@@ -54,7 +54,14 @@ const ProShopHire = ({ data }: HireDataProps) => {
                   {feature.title}
                 </h4>
                 <p className="font-inter text-gray-400 text-sm leading-relaxed font-medium">
-                  {feature.description}
+                  {feature.title === "FRESH STOCK" ? (
+                    <>
+                      <a href="#shop-catalog" className="text-[#009FF3] hover:underline">Padel Rackets</a>
+                      {" rotated every 30 days for peak performance."}
+                    </>
+                  ) : (
+                    feature.description
+                  )}
                 </p>
               </div>
             ))}
