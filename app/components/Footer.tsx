@@ -147,6 +147,16 @@ const Footer = () => {
               <ul className="space-y-4 font-inter font-bold text-xs tracking-widest uppercase text-gray-400">
                 <li><Link href="#" className="hover:text-white transition-colors">Padel News</Link></li>
                 <li><Link href="#" className="hover:text-white transition-colors">How to Book</Link></li>
+                <li>
+                  <a
+                    href="https://www.restorefine.co.uk/resources/how-we-helped-padel-academy-scotland-build-brand-from-scratch"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="hover:text-[#009FF3] transition-colors"
+                  >
+                    Our Brand Story
+                  </a>
+                </li>
               </ul>
             </div>
 
@@ -174,11 +184,12 @@ const Footer = () => {
             ALL RIGHTS RESERVED © {currentYear} ITS PADEL
           </p>
           <Link
-            href="https://restorefine.com"
+            href="https://www.restorefine.co.uk"
             target="_blank"
+            rel="noopener noreferrer"
             className="font-inter font-bold text-[10px] tracking-[0.2em] text-gray-600 hover:text-[#009FF3] transition-colors uppercase"
           >
-            DESIGNED & BUILT BY RESTOREFINE STUDIO
+            DESIGNED & BUILT BY RESTOREFINE
           </Link>
         </div>
 
