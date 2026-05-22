@@ -21,7 +21,8 @@ export const metadata: Metadata = {
   },
   description: "itspadel is Scotland's premier indoor padel club in East Kilbride. Book courts, join coaching sessions, shop padel equipment, and be part of the UK's fastest growing racket sport community.",
   icons: {
-    icon: "/itspadel-favicon.ico",
+    icon: "/its-padel-favicon.svg",
+    shortcut: "/its-padel-favicon.svg",
   },
   keywords: [
     "padel East Kilbride",
@@ -43,7 +44,7 @@ export const metadata: Metadata = {
     siteName: "itspadel",
     images: [
       {
-        url: "/og-image.jpg",
+        url: "/its-padel-favicon-og-image.png",
         width: 1200,
         height: 630,
         alt: "itspadel – Indoor Padel Courts in East Kilbride",
@@ -56,7 +57,7 @@ export const metadata: Metadata = {
     card: "summary_large_image",
     title: "itspadel | Indoor Padel Courts in East Kilbride, Scotland",
     description: "Scotland's premier indoor padel club — premium courts, expert coaching, and a vibrant community in East Kilbride.",
-    images: ["/og-image.jpg"],
+    images: ["/its-padel-favicon-og-image.png"],
   },
   alternates: {
     canonical: "https://www.itspadel.co.uk",
