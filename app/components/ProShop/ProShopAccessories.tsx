@@ -96,7 +96,7 @@ const ProShopAccessories = ({ data }: ProShopAccessoriesProps) => {
       </section>
 
       {/* 2. TECHNICAL ELEMENTS Section */}
-      <section className="w-full bg-white py-24">
+      <section id="balls-section" className="w-full bg-white py-24">
         <div className="max-w-[1600px] mx-auto px-8 md:px-16 lg:px-24">
           {/* Section Header */}
           <div className="mb-16">

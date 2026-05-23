@@ -95,7 +95,21 @@ const FAQ = () => {
 
                   <div className={`overflow-hidden transition-all duration-300 ${isOpen ? 'max-h-60 opacity-100' : 'max-h-0 opacity-0'}`}>
                     <p className="font-inter text-white/40 text-sm md:text-base leading-relaxed pb-6 pl-9">
-                      {faq.answer}
+                      {'answerParts' in faq && Array.isArray(faq.answerParts)
+                        ? faq.answerParts.map((part, i) =>
+                            'href' in part && part.href ? (
+                              <Link
+                                key={i}
+                                href={part.href as string}
+                                className="text-[#009FF3] hover:text-white underline underline-offset-2 transition-colors"
+                              >
+                                {part.text}
+                              </Link>
+                            ) : (
+                              <span key={i}>{part.text}</span>
+                            )
+                          )
+                        : faq.answer}
                     </p>
                   </div>
                 </div>

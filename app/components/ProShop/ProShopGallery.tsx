@@ -18,8 +18,8 @@ interface GalleryData {
   sectionLabel: string;
   title: string;
   titleHighlight: string;
-  viewAllText: string;
-  viewAllHref: string;
+  viewAllText?: string;
+  viewAllHref?: string;
   products: Product[];
 }
 
@@ -81,12 +81,14 @@ const ProShopGallery = ({ data }: ProShopGalleryProps) => {
               {data.title} <span className="text-[#009FF3]">{data.titleHighlight}</span>
             </h2>
           </div>
-          <Link href={data.viewAllHref} className="mt-6 md:mt-0 items-center flex gap-4 text-white hover:text-[#009FF3] transition-colors group">
-            <span className="font-bison font-bold text-2xl uppercase" style={{ transform: "skewX(-15deg)" }}>
-              {data.viewAllText}
-            </span>
-            <ArrowRight className="w-6 h-6 transform group-hover:translate-x-2 transition-transform" />
-          </Link>
+          {data.viewAllHref && data.viewAllText ? (
+            <Link href={data.viewAllHref} className="mt-6 md:mt-0 items-center flex gap-4 text-white hover:text-[#009FF3] transition-colors group">
+              <span className="font-bison font-bold text-2xl uppercase" style={{ transform: "skewX(-15deg)" }}>
+                {data.viewAllText}
+              </span>
+              <ArrowRight className="w-6 h-6 transform group-hover:translate-x-2 transition-transform" />
+            </Link>
+          ) : null}
         </div>
 
         {/* Mobile Carousel */}

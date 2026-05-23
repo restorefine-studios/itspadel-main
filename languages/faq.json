@@ -14,7 +14,14 @@
     },
     {
       "question": "What equipment do I need?",
-      "answer": "We provide all equipment at our clubs, including racquets and balls. If you'd like to purchase your own, we recommend starting with a basic set."
+      "answer": "We provide all equipment at our clubs, including padel rackets and balls. If you'd like to purchase your own, we recommend starting with a basic set.",
+      "answerParts": [
+        { "text": "We provide all equipment at our clubs, including " },
+        { "text": "padel rackets", "href": "/pro-shop#shop-catalog" },
+        { "text": " and " },
+        { "text": "balls", "href": "/pro-shop#balls-section" },
+        { "text": ". If you'd like to purchase your own, we recommend starting with a basic set." }
+      ]
     },
     {
       "question": "How long does a game last?",

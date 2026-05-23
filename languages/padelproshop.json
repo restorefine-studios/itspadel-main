@@ -18,12 +18,10 @@
     "backgroundImageAlt": "Elite Performance Padel Equipment"
   },
   "gallery": {
-    "sectionLabel": "2026 COLLECTION",
-    "title": "AVAILABLE",
-    "titleHighlight": "RACKETS",
-    "viewAllText": "VIEW ALL",
-    "viewAllHref": "#view-all",
-    "products": [
+  "sectionLabel": "2026 COLLECTION",
+  "title": "AVAILABLE",
+  "titleHighlight": "RACKETS",
+  "products": [
       {
         "name": "Adidas Metalbone HRD+ 2026",
         "price": "£320",
@@ -102,7 +100,7 @@
     "juniorProLab": {
       "title": "JUNIOR PRO LAB",
       "product": {
-        "name": "ADIDAS KIDS ARROW HIT",
+        "name": "KIDS ARROW HIT",
         "description": "Built for the next generation of court dominators. Lightweight, high-impact glass fiber construction.",
         "price": "£60",
         "buttonText": "GET EQUIPPED",
@@ -141,7 +139,7 @@
     "headline": ["PRO HIRE", "PROGRAM"],
     "price": "£4",
     "frequency": "/ SESSION",
-    "description": "Don't settle for entry-level. Test the world's most advanced padel rackets in your next session. Our fleet features the latest models from Adidas and Bullpadel.",
+    "description": "Don't settle for entry-level. Try the latest premium padel rackets in your next session and experience elite-level performance firsthand.",
     "features": [
       {
         "title": "FRESH STOCK",
