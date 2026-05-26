@@ -21,7 +21,7 @@ interface HireDataProps {
 
 const ProShopHire = ({ data }: HireDataProps) => {
   return (
-    <section className="w-full bg-[#171717] py-24 lg:py-32 overflow-hidden">
+    <section id="racket-hire" className="w-full bg-[#171717] py-24 lg:py-32 overflow-hidden">
       <div className="max-w-[1600px] mx-auto px-8 md:px-16 lg:px-24 flex flex-col lg:flex-row items-center lg:items-start gap-16 lg:gap-24">
         
         {/* Left Column: Content */}
